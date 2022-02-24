@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <section name="dependencyInjectionInformation" type="SD.LLBLGen.Pro.ORMSupportClasses.DependencyInjectionSectionHandler, SD.LLBLGen.Pro.ORMSupportClasses.NET20" />
+    <section name="ModelConfigurationInformation" type="Studio.Net.BLL.ModelConfigurationSectionHandler, Studio.Net.BLL" />
+  </configSections>
+  <ModelConfigurationInformation>
+    <Sources>
+      <Source Type="Embedded" AssemblyName="Studio.Phone.POS.BLL" ResourceName="Studio.Phone.POS.BLL.Model.xml" />
+      <Source Type="Embedded" AssemblyName="Studio.Config.BLL" ResourceName="Studio.Config.BLL.Model.xml" />
+      <Source Type="Embedded" AssemblyName="Studio.Vision.POS.BLL" ResourceName="Studio.Vision.POS.BLL.Model.xml" />
+    </Sources>
+  </ModelConfigurationInformation>
+  <dependencyInjectionInformation>
+    <additionalAssemblies>
+      <assembly filename="Studio.Phone.POS.BLL.Validation.dll" />
+      <assembly filename="Studio.Vision.POS.BLL.Validation.dll" />
+    </additionalAssemblies>
+  </dependencyInjectionInformation>
+  <appSettings>
+    <!--<add key="Main.ConnectionString" value="GOiTkhnBF7emh1GbKJR4dPIXr101m6sfCNKUZ3zBkJ+C5HGG8Gg7SkzJBghT3+QMfuw1sAVixzvlr8rVoQzCPq9lrCyP8iTA1z5+2vBGHQQeu5PjZKqBtRMUPd32O5ANiY+eW6V6x3UEqA9Ij1px8A+kRbWfhUtClfxsTFKzPLRQOxRuabT7ewA=" />-->
+    <!--<add key="Main.ConnectionString" value="GOiTkhnBF7emh1GbKJR4dPIXr101m6sfCNKUZ3zBkJ+C5HGG8Gg7SkzJBghT3+QMDjrbcpuKihgwbTL56rOdn1646QXR04bze0ALnCPhX+aNn7dx3i2+oW4rOhURbC52I/CbNXdMz2X6AADrffnMBwYjwrVMTAg7eOH8NwZ4KErzGcaDI0r2uwA=" />-->
+    <!-- Telko PY <add key="Main.ConnectionString" value="GOiTkhnBF7drg8uo00rcolo7pXoVAFrsxdNU/NXH8u8QvesF6SRoG2FvZfnBiPeMiV/1IBn0T4S5J0EWOfaVzUsnrwIGN86KtaZhvlorQwbVHwCqCdj9OVwFJtomfg8ixdRAcoQ1fJWR7mg9qVqfgMh3gOozQ7zGpkeOzrm5i1wq8r9hYh+E9AmMuAiPb/E/SSwB29f9kSgA" />-->
+    
+    <add key="Main.ConnectionString" value="GOiTkhnBF7cN2dPaXpNid+lB0EI8XCJLCqp40GzITVYDl04f0uGqWj4ZVeTj544xFDV5PgGwHSLMLh7FdKdRQVFi2yNqjKFLhcD8G6SbcB8+A3hAdZGdhDIADlAEG84rhlF2sjuYJgLfzv+GzlXd1TPP2t0L8/7bXBG2WHg8SisA" />
+    <add key="Config.ConnectionString" value="GOiTkhnBF7cN2dPaXpNid+lB0EI8XCJLCqp40GzITVYDl04f0uGqWlw8Lvt4J1qA2CRtfIU4o3tmvdamxSc2nsZA3s/CHEUhceTtVfY+Ooi9hje0eY0RsPIM/3kNhmd2B7qSUg10Zc6evaYFeebLD/wDiCMr1UkYZZokKpRIrI8A" />
+    <add key="DbSpecific" value="Studio.Phone.POS.DAL.DatabaseSpecific" />
+    <add key="Exe.DAL" value="Studio.Phone.POS.BLL" />
+    <add key="DbGeneric" value="Studio.Phone.POS.DAL" />
+    <add key="CatalogNameUsageSetting" value="1" />
+    <add key="CatalogNameToUse" value="" />
+    <add key="CajaId" value="3" />
+    <add key="CommandTimeOut" value="15" />
+    <add key="BLL" value="Studio.Phone.POS.BLL" />
+    <add key="DataAccessAdapterNS" value="Studio.Vision.POS.BLL" />
+    <add key="RemoteMachine" value="10.0.2.3:7777" />
+    <add key="DefaultPrinterName" value="\\desarrollo1\ticket" />
+    <add key="AnchoCampoArticuloEnBoleta" value="150" />
+    <add key="ImprimirFacturaClassName" value="ImprimoFacturaLaser2HVisionParaguay" />
+    <add key="TopeLineas" value="15" />
+    <add key="DecimalDigits" value="2" />
+    <!--<add key="RemotePort" value="9999" />-->
+    <add key="MaxErrorAllowed" value="5" />
+    <add key="DefaultMonedaId" value="1" />
+    <add key="ModoPreVenta" value="0" />
+    <add key="StringDePreVenta" value="Pre-Venta" />
+    <add key="RunTraffic" value="0" />
+    <add key="AdminMode" value="0" />
+    <add key="SqlServerDQECompatibilityLevel" value="1" />
+    <add key="SignoDeIdsDeVenta" value="1" />
+    <add key="EmpresaOnLine" value="1" />
+    <add key="DepositoOnLine" value="1" />
+    <add key="CajaOnLine" value="1" />
+    <add key="SocketMerchant" value="localhost:9790" />
+    <add key="RemoteMachineRecarga" value="testpc" />
+    <add key="RemotePortRecarga" value="9899" />
+    <add key="UpdateVersion" value="1.0.0.2" />
+    <add key="UpdateLocation" value="http://www.studiosoftworks.com/updates/test/posxxx" />
+    <add key="Languages" value="es;af" />
+    <add key="ParametroSistemaType" value="Studio.Vision.POS.BLL.ParametroSistema, Studio.Vision.POS.BLL" />
+  </appSettings>
+  <system.web>
+    <httpModules>
+      <add name="ASPxHttpHandlerModule" type="DevExpress.Web.ASPxClasses.ASPxHttpHandlerModule, DevExpress.Web.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    </httpModules>
+  </system.web>
+  <system.webServer>
+    <modules>
+      <add name="ASPxHttpHandlerModule" type="DevExpress.Web.ASPxClasses.ASPxHttpHandlerModule, DevExpress.Web.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    </modules>
+  </system.webServer>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0" />
+  </startup>
+</configuration>

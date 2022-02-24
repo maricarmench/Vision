@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--LLBLGen Pro v3.5 project file. Do not manually edit this file. Incorrect references could lead to an unloadable project file.-->
+<Project Version="3.5" TargetFrameworkName="LLBLGen Pro Runtime Framework">
+  <Properties>
+    <Abbreviations />
+    <Property Name="AdditionalTaskPerformerFolder" Value="" />
+    <Property Name="AdditionalTasksFolder" Value="" />
+    <Property Name="AdditionalTemplatesFolder" Value="" />
+    <Property Name="AdditionalTypeConverterFolder" Value="" />
+    <Property Name="AddNewElementsAfterRefresh" Value="0" />
+    <Property Name="AddNewFieldsAfterRefresh" Value="0" />
+    <Property Name="AddNewViewsAsEntitiesAfterRefresh" Value="0" />
+    <Property Name="AutoAddManyToManyRelationships" Value="false" />
+    <Property Name="AutoAssignSequencesToIntegerPks" Value="true" />
+    <Property Name="AutoAssignTypeConverterToFieldMapping" Value="false" />
+    <Property Name="CleanUpVsNetProjects" Value="true" />
+    <Property Name="ConnectionStringKeyNamePattern" Value="Sync.ConnectionString" />
+    <Property Name="EncodingToUse" Value="0" />
+    <Property Name="EnforcePascalCasingAlways" Value="true" />
+    <Property Name="EntityFieldNameStripPattern" Value="{}{}" />
+    <Property Name="EntityNameStripPattern" Value="{tbl_}{}" />
+    <Property Name="ExcludableOrphanedElementDetectedAction" Value="3" />
+    <Property Name="FailCodeGenerationOnWriteError" Value="false" />
+    <Property Name="FieldMappedOntoRelatedFieldPattern" Value="{$RelatedFieldName}" />
+    <Property Name="FkFieldsAreNamedAfterTargetField" Value="true" />
+    <Property Name="ForeignKeyFieldPattern" Value="{$NavigatorName}{$RelatedFieldName}" />
+    <Property Name="GroupUsage" Value="0" />
+    <Property Name="IdentifyingFieldsFollowDBPrimaryKeyConstraints" Value="0" />
+    <Property Name="InsertUnderscoreAtWordBreakCaseInsensitiveDBs" Value="false" />
+    <Property Name="InsertUnderscoreAtWordBreakCaseSensitiveDBs" Value="false" />
+    <Property Name="LengthPrecisionScaleFollowDBLengthPrecisionScale" Value="0" />
+    <Property Name="MakeElementNamePascalCasing" Value="true" />
+    <Property Name="NavigatorMappedOntoManyToManyPattern" Value="{$EndEntityName}CollectionVia{$IntermediateEntityName$S}" />
+    <Property Name="NavigatorMappedOntoOneManyToOnePattern" Value="{$EndEntityName$S}" />
+    <Property Name="NavigatorMappedOntoOneToManyPattern" Value="{$EndEntityName$P}" />
+    <Property Name="NonExcludableOrphanedElementDetectedAction" Value="3" />
+    <Property Name="PreferDecimalOverCurrencyTypes" Value="true" />
+    <Property Name="PreferNaturalCharacterTypes" Value="true" />
+    <Property Name="PreferVariableLengthTypes" Value="true" />
+    <Property Name="ProjectCreator" Value="studio" />
+    <Property Name="ProjectName" Value="Studio_Telko_Sync" />
+    <Property Name="ReflectNullabilityOfElementFieldInTargetField" Value="0" />
+    <Property Name="RelationalModelDataElementNameCasingCaseInsensitiveDBs" Value="3" />
+    <Property Name="RelationalModelDataElementNameCasingCaseSensitiveDBs" Value="3" />
+    <Property Name="RelationshipsFollowDBForeignKeyConstraints" Value="0" />
+    <Property Name="RemoveUnderscoresFromElementName" Value="true" />
+    <Property Name="RemoveUnmappedElementsAfterRefresh" Value="0" />
+    <Property Name="ResetFieldOrderBasedOnTargetOrderAtRefresh" Value="false" />
+    <Property Name="RetrieveDBCustomProperties" Value="false" />
+    <Property Name="RootNamespace" Value="" />
+    <Property Name="SequencePattern" Value="SEQ_{$EntityName}" />
+    <Property Name="SetGroupNameAfterSchemaName" Value="true" />
+    <Property Name="SetSchemaNameAfterGroupName" Value="true" />
+    <Property Name="StoredProcNameStripPattern" Value="{pr_, sp_}{}" />
+    <Property Name="StoreTimeLastGeneratedIntoProject" Value="false" />
+    <Property Name="SyncMappedElementNamesAfterRefresh" Value="0" />
+    <Property Name="SyncRelationalModelDataElementNameAfterRename" Value="0" />
+    <Property Name="SyncRenamedMappedElementNamesAfterRefresh" Value="0" />
+    <Property Name="TargetPerEntityEdgesRequireBackingFkConstraint" Value="true" />
+    <Property Name="TypedViewFieldNameStripPattern" Value="{}{}" />
+    <Property Name="TypedViewNameStripPattern" Value="{vw_}{}" />
+    <Property Name="UniqueConstraintsFollowDBUniqueConstraints" Value="0" />
+    <Property Name="UpdateCustomPropertiesAfterRefresh" Value="0" />
+    <Property Name="UseCustomFieldOrderingOnNewElements" Value="false" />
+  </Properties>
+  <TypeShortcuts />
+  <CodeGenerationCyclePreferences>
+    <OutputType Value="3">
+      <LastUsedPreferences>
+        <DestinationRootFolder Value="C:\Personal\Studio\Vision\Telko\Sync" />
+        <FrameworkName Value="LLBLGen Pro Runtime Framework" />
+        <LanguageName Value="C#" />
+        <PlatformName Value=".NET 4.0" />
+        <PresetName Value="SD.Presets.Adapter.TwoClasses2010" />
+        <RootNamespace Value="Studio_Telko_Sync" />
+        <TemplateGroup Value="Adapter" />
+        <TemplateBindings>
+          <Binding Name="SD.TemplateBindings.SqlServerSpecific.NET20" />
+          <Binding Name="SD.TemplateBindings.SharedTemplates.NET40" />
+          <Binding Name="SD.TemplateBindings.SharedTemplates.NET35" />
+          <Binding Name="SD.TemplateBindings.SharedTemplates.NET20" />
+          <Binding Name="SD.TemplateBindings.General" />
+        </TemplateBindings>
+      </LastUsedPreferences>
+    </OutputType>
+  </CodeGenerationCyclePreferences>
+  <CodeGenerationMetaDataDefaults>
+    <TargetElement Type="256">
+      <Defaults>
+        <Attributes>
+          <Attribute Value="Browsable($false)" />
+        </Attributes>
+      </Defaults>
+    </TargetElement>
+  </CodeGenerationMetaDataDefaults>
+  <EntityModel>
+    <ValueTypeDefinitions />
+    <EntityDefinitions>
+      <EntityDefinition Name="DistribucionRegistro">
+        <Fields>
+          <Field Name="Datos" Type="string" MaxLength="2147483647" />
+          <Field Name="EntityId" Type="int" Precision="10" />
+          <Field Name="FechayHora" Type="datetime" />
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="PaqueteGuid" Type="guid" IsOptional="true" />
+          <Field Name="TenantId" Type="int" Precision="10" IsAutoCreated="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="EntitiyDistribucion">
+        <Fields>
+          <Field Name="Distribuir" Type="bool" IsOptional="true" />
+          <Field Name="EntityName" Type="string" MaxLength="250" />
+          <Field Name="Filtro" Type="string" IsOptional="true" MaxLength="1500" />
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Orden" Type="int" Precision="10" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="EntityDistribucionAgregada">
+        <Fields>
+          <Field Name="EntityAgregadaId" Type="int" Precision="10" />
+          <Field Name="EntityId" Type="int" Precision="10" />
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="SubTentant">
+        <Fields>
+          <Field Name="ClienteDrakoId" Type="int" Precision="10" />
+          <Field Name="DepositoDestinoId" Type="int" Precision="10" />
+          <Field Name="Descripcion" Type="string" MaxLength="250" />
+          <Field Name="Id" Type="int" Precision="10" IsPrimaryKey="true" />
+          <Field Name="TentantId" Type="int" Precision="10" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Tenant">
+        <Fields>
+          <Field Name="Activo" Type="bool" IsOptional="true" />
+          <Field Name="FechaActualizacion" Type="datetime" IsOptional="true" />
+          <Field Name="Id" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="IdProveedorDrako" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="Nombre" Type="string" MaxLength="250" />
+          <Field Name="Rut" Type="string" MaxLength="25" />
+        </Fields>
+      </EntityDefinition>
+    </EntityDefinitions>
+    <Relationships>
+      <NormalRelationship Name="DistribucionRegistro.Entitiy-EntitiyDistribucion.DistribucionRegistros" Start=":DistribucionRegistro" End=":EntitiyDistribucion" StartNavigator="Entitiy" EndNavigator="DistribucionRegistros" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="EntityId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="DistribucionRegistro.Tenant-Tenant.DistribucionRegistros" Start=":DistribucionRegistro" End=":Tenant" StartNavigator="Tenant" EndNavigator="DistribucionRegistros" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="TenantId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="EntityDistribucionAgregada.EntitiyDistribucion-EntitiyDistribucion.EntitiesDistribucion" Start=":EntityDistribucionAgregada" End=":EntitiyDistribucion" StartNavigator="EntitiyDistribucion" EndNavigator="EntitiesDistribucion" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="EntityId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="EntityDistribucionAgregada.EntitiyDistribucion_-EntitiyDistribucion.EntitiesDistribucionAgregada" Start=":EntityDistribucionAgregada" End=":EntitiyDistribucion" StartNavigator="EntitiyDistribucion_" EndNavigator="EntitiesDistribucionAgregada" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="EntityAgregadaId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="SubTentant.Tenant-Tenant.SubTentants" Start=":SubTentant" End=":Tenant" StartNavigator="Tenant" EndNavigator="SubTentants" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="TentantId" PkField="Id" />
+        </FieldRelationships>
+      </NormalRelationship>
+    </Relationships>
+    <InheritanceHierarchies />
+  </EntityModel>
+  <TargetDatabases>
+    <TargetDatabase Type="2D18D138-1DD2-467E-86CC-4838250611AE">
+      <ConnectionElements>
+        <ConnectionElement Name="ServerName" Value="localhost" />
+        <ConnectionElement Name="CatalogName" Value="master" />
+        <ConnectionElement Name="UseWindowsAuthentication" Value="true" />
+        <ConnectionElement Name="UserID" Value="" />
+        <ConnectionElement Name="Password" Value="" />
+      </ConnectionElements>
+      <SystemSequences>
+        <Sequence Name="SCOPE_IDENTITY()" />
+        <Sequence Name="@@IDENTITY" />
+      </SystemSequences>
+      <Catalogs>
+        <Catalog Name="Studio_Telko_Sync">
+          <Schemas>
+            <Schema Name="dbo">
+              <Tables>
+                <Table Name="DistribucionRegistro">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_DistribucionRegistro" DbType="8" Precision="10" />
+                    <Field Name="EntityId" Ordinal="2" DbType="8" Precision="10" />
+                    <Field Name="Datos" Ordinal="3" DbType="12" Length="2147483647" />
+                    <Field Name="FechayHora" Ordinal="4" DbType="4" />
+                    <Field Name="PaqueteGuid" Ordinal="5" IsOptional="true" DbType="25" />
+                    <Field Name="TenantId" Ordinal="6" DbType="8" Precision="10" />
+                  </Fields>
+                </Table>
+                <Table Name="EntitiyDistribucion">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_EntitiesDistribucion" DbType="8" Precision="10" />
+                    <Field Name="EntityName" Ordinal="2" DbType="24" Length="250" />
+                    <Field Name="Orden" Ordinal="3" DbType="8" Precision="10" />
+                    <Field Name="Filtro" Ordinal="4" IsOptional="true" DbType="24" Length="1500" />
+                    <Field Name="Distribuir" Ordinal="5" IsOptional="true" DbType="2" />
+                  </Fields>
+                </Table>
+                <Table Name="EntityDistribucionAgregada">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_EntityDistribucionAgregada" DbType="8" Precision="10" />
+                    <Field Name="EntityId" Ordinal="2" DbType="8" Precision="10" />
+                    <Field Name="EntityAgregadaId" Ordinal="3" DbType="8" Precision="10" />
+                  </Fields>
+                </Table>
+                <Table Name="SubTentant">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsPrimaryKey="true" PkConstraintName="PK_SubTentant" DbType="8" Precision="10" />
+                    <Field Name="TentantId" Ordinal="2" DbType="8" Precision="10" />
+                    <Field Name="ClienteDrakoId" Ordinal="3" DbType="8" Precision="10" />
+                    <Field Name="DepositoDestinoId" Ordinal="4" DbType="8" Precision="10" />
+                    <Field Name="Descripcion" Ordinal="5" DbType="24" Length="250" />
+                  </Fields>
+                </Table>
+                <Table Name="Tenant">
+                  <Fields>
+                    <Field Name="Id" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" PkConstraintName="PK_Tenant" DbType="8" Precision="10" />
+                    <Field Name="RUT" Ordinal="2" DbType="24" Length="25" />
+                    <Field Name="Nombre" Ordinal="3" DbType="24" Length="250" />
+                    <Field Name="IdProveedorDrako" Ordinal="4" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="Activo" Ordinal="5" IsOptional="true" DbType="2" />
+                    <Field Name="FechaActualizacion" Ordinal="6" IsOptional="true" DbType="4" />
+                  </Fields>
+                </Table>
+              </Tables>
+            </Schema>
+          </Schemas>
+          <ForeignKeyConstraints>
+            <ForeignKeyConstraint Name="dbo:DistribucionRegistro:FK_DistribucionRegistro_EntitiyDistribucion">
+              <FieldPairs>
+                <FieldPair PkField="dbo:EntitiyDistribucion:Id" FkField="dbo:DistribucionRegistro:EntityId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:DistribucionRegistro:FK_DistribucionRegistro_Tenant">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Tenant:Id" FkField="dbo:DistribucionRegistro:TenantId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:EntityDistribucionAgregada:FK_EntityDistribucionAgregada_EntitiesDistribucion">
+              <FieldPairs>
+                <FieldPair PkField="dbo:EntitiyDistribucion:Id" FkField="dbo:EntityDistribucionAgregada:EntityId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:EntityDistribucionAgregada:FK_EntityDistribucionAgregada_EntitiesDistribucion1">
+              <FieldPairs>
+                <FieldPair PkField="dbo:EntitiyDistribucion:Id" FkField="dbo:EntityDistribucionAgregada:EntityAgregadaId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:SubTentant:FK_SubTentant_Tenant">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Tenant:Id" FkField="dbo:SubTentant:TentantId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+          </ForeignKeyConstraints>
+        </Catalog>
+      </Catalogs>
+    </TargetDatabase>
+  </TargetDatabases>
+  <MappingStores>
+    <MappingStore Type="2D18D138-1DD2-467E-86CC-4838250611AE">
+      <EntityMappings>
+        <EntityMapping EntityName=":DistribucionRegistro" TargetName="Studio_Telko_Sync:dbo:DistribucionRegistro">
+          <FieldMappings>
+            <FieldMapping FieldName="Datos" TargetFieldName="Datos" />
+            <FieldMapping FieldName="EntityId" TargetFieldName="EntityId" />
+            <FieldMapping FieldName="FechayHora" TargetFieldName="FechayHora" />
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="PaqueteGuid" TargetFieldName="PaqueteGuid" />
+            <FieldMapping FieldName="TenantId" TargetFieldName="TenantId" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":EntitiyDistribucion" TargetName="Studio_Telko_Sync:dbo:EntitiyDistribucion">
+          <FieldMappings>
+            <FieldMapping FieldName="Distribuir" TargetFieldName="Distribuir" />
+            <FieldMapping FieldName="EntityName" TargetFieldName="EntityName" />
+            <FieldMapping FieldName="Filtro" TargetFieldName="Filtro" />
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Orden" TargetFieldName="Orden" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":EntityDistribucionAgregada" TargetName="Studio_Telko_Sync:dbo:EntityDistribucionAgregada">
+          <FieldMappings>
+            <FieldMapping FieldName="EntityAgregadaId" TargetFieldName="EntityAgregadaId" />
+            <FieldMapping FieldName="EntityId" TargetFieldName="EntityId" />
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":SubTentant" TargetName="Studio_Telko_Sync:dbo:SubTentant">
+          <FieldMappings>
+            <FieldMapping FieldName="ClienteDrakoId" TargetFieldName="ClienteDrakoId" />
+            <FieldMapping FieldName="DepositoDestinoId" TargetFieldName="DepositoDestinoId" />
+            <FieldMapping FieldName="Descripcion" TargetFieldName="Descripcion" />
+            <FieldMapping FieldName="Id" TargetFieldName="Id" />
+            <FieldMapping FieldName="TentantId" TargetFieldName="TentantId" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName=":Tenant" TargetName="Studio_Telko_Sync:dbo:Tenant">
+          <FieldMappings>
+            <FieldMapping FieldName="Activo" TargetFieldName="Activo" />
+            <FieldMapping FieldName="FechaActualizacion" TargetFieldName="FechaActualizacion" />
+            <FieldMapping FieldName="Id" TargetFieldName="Id" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="IdProveedorDrako" TargetFieldName="IdProveedorDrako" />
+            <FieldMapping FieldName="Nombre" TargetFieldName="Nombre" />
+            <FieldMapping FieldName="Rut" TargetFieldName="RUT" />
+          </FieldMappings>
+        </EntityMapping>
+      </EntityMappings>
+      <TypedViewMappings />
+      <SPCallMappings />
+      <TypeConversionDefinitions />
+    </MappingStore>
+  </MappingStores>
+  <ModelViews />
+</Project>

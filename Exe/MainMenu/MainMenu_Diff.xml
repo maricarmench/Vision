@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuTreeDiff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Groups> 
+      
+    <MenuGroup>
+      <Caption>Óptica</Caption>
+      <Name>Óptica</Name>
+      <ImageReference>Optica24.png, Studio.Vision.Exe</ImageReference>
+      <SmallImageReference>Optica16.png, Studio.Vision.Exe</SmallImageReference>
+      <Items>
+        <!--<MenuItem>
+          <Type>Group</Type>
+          <Name>cmdVentasGrp</Name>
+          <Hidden>false</Hidden>
+          <Caption>Ventas</Caption>
+          <Id>be562599-e103-4193-9cfe-0b4bf3f716a7</Id>
+          <SubItems>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdVenta</Name>
+              <Hidden>false</Hidden>
+              <Caption>Gestión de ventas</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_VentaListViewModuleFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Gestión de ventas</Description>
+              <Id>489047f9-f436-4b6b-a4b7-200e868b2598</Id>
+              <SubItems />
+            </MenuItem>
+          </SubItems>
+        </MenuItem>-->
+        <MenuItem>
+          <Type>Group</Type>
+          <Name>cmdCristalesGrp</Name>
+          <Hidden>false</Hidden>
+          <Caption>Cristales</Caption>
+          <Id>35a34ded-efba-43d7-a547-87c596eaa343</Id>
+          <ImageReference>glass_16.png, Studio.Vision.Exe</ImageReference>
+          <SubItems>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdCristal</Name>
+              <Hidden>false</Hidden>
+              <Caption>Mantenimiento</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_CristalListViewFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Mantenimiento de cristales</Description>
+              <ImageReference>glass_16.png, Studio.Vision.Exe</ImageReference>
+              <Id>3374073a-bae9-4148-8186-3d8c7fc7ee50</Id>
+              <SubItems />
+            </MenuItem>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdCristalMaterial</Name>
+              <Hidden>false</Hidden>
+              <Caption>Materiales</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_CristalMaterialListViewFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Mantenimiento de materiales de cristales</Description>
+              <Id>6fc48012-a769-4112-aaa2-77af77ee523d</Id>
+              <ImageReference>glass_16_i.png, Studio.Vision.Exe</ImageReference>
+              <SubItems />
+            </MenuItem>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdCristalPlantilla</Name>
+              <Hidden>false</Hidden>
+              <Caption>Plantillas</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_CristalPlantillaListViewFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Mantenimiento de plantillas de cristales</Description>
+              <Id>1FCF9FC1-939C-4D37-AE2D-7AF01110CAD9</Id>
+              <ImageReference>Plantilla.png, Studio.Phone.Controls.New</ImageReference>
+              <SubItems />
+            </MenuItem>
+          </SubItems>
+        </MenuItem>
+        <MenuItem>
+          <Type>Group</Type>
+          <Name>cmdAdministracionOptica</Name>
+          <Hidden>false</Hidden>
+          <Caption>Administración</Caption>
+          <Id>c6470e09-2f3d-487f-8438-f02548462f34</Id>
+          <ImageReference>Administracion.png, Studio.Phone.Controls.New</ImageReference>
+          <SubItems>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdDV_Doctor</Name>
+              <Hidden>false</Hidden>
+              <Caption>Doctores</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_DoctorListViewFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Mantenimiento de doctores</Description>
+              <Id>d9711c06-0fb8-4075-8394-3f1d61bc4ac1</Id>
+              <ImageReference>doctor_16.png, Studio.Vision.Exe</ImageReference>
+              <SubItems />
+            </MenuItem>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdDV_Armazones</Name>
+              <Hidden>true</Hidden>
+              <Caption>Armazones</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_ArmazonListViewFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Mantenimiento de armazones</Description>
+              <Id>F4CC51EA-278B-415B-89A1-0E72AAC056D2</Id>
+              <ImageReference>safety_glasses_16.png, Studio.Vision.Exe</ImageReference>
+              <SubItems />
+            </MenuItem>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdDV_Taller</Name>
+              <Hidden>false</Hidden>
+              <Caption>Talleres</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_TallerListViewModuleFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Mantenimiento de talleres</Description>
+              <Id>d9711c06-0fb8-4075-8394-3f1d61bc5551</Id>              
+              <SubItems />
+            </MenuItem>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdDV_InventarioCristales</Name>
+              <Hidden>false</Hidden>
+              <Caption>Inventario de cristales</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_ConsultaInventarioCristalModuleFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Consulta de inventario de cristales</Description>
+              <Id>FAFC5512-5BAB-4952-9779-C143F6537878</Id>
+              <ImageReference>Inventario.png, Studio.Phone.Controls.New</ImageReference>
+              <SubItems />
+            </MenuItem>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdDV_InventarioCristales_Hst</Name>
+              <Hidden>false</Hidden>
+              <Caption>Historico de inventario de cristales</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_HistoricoConsultaInventarioCristalModuleFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Historico de inventario de cristales</Description>
+              <Id>FAFC5512-5BAB-4952-9779-C143F6537872</Id>
+              <ImageReference>Inventario.png, Studio.Phone.Controls.New</ImageReference>
+              <SubItems />
+            </MenuItem>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdDV_HistoricoDocumentoSalidaCristales</Name>
+              <Hidden>false</Hidden>
+              <Caption>Ventas de cristales</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_HistoricoDocumentoSalidaCristalModuleFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Consulta de venta de cristales</Description>
+              <Id>EA87DD05-570C-40B4-956D-DEDE4EEA239B</Id>
+              <ImageReference>BO_Sale_v92.png, Studio.Phone.Controls.New</ImageReference>
+              <SubItems />
+            </MenuItem>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdDV_HistoricoRecetasComunes</Name>
+              <Hidden>false</Hidden>
+              <Caption>Histórico de recetas</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_RecetaComunTaskPanelModuleFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Histórico de recetas comunes</Description>
+              <Id>FAFC5512-5BAB-4952-9779-C187F6537878</Id>
+              <ImageReference>optometrist_add_16.png, Studio.Vision.Exe</ImageReference>
+              <SubItems />
+            </MenuItem>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdRecetaManager</Name>
+              <Hidden>true</Hidden>
+              <Caption>Flujo de trabajo de recetas</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.RecetaWorkFlowTaskPanelFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Flujo de trabajo de recetas</Description>
+              <Id>802b4dd7-5866-485f-907a-97ee7f1701ab</Id>
+              <ImageReference>WorkFlow.png, Studio.Phone.Controls.New</ImageReference>
+              <SubItems />
+            </MenuItem>
+          </SubItems>
+        </MenuItem>
+        <MenuItem>
+          <Type>Group</Type>
+          <Name>cmdWorkFlowGrp</Name>
+          <Hidden>false</Hidden>
+          <Caption>Flujos de trabajo</Caption>
+          <Id>DD5329A8-F527-41ED-856F-69355E36FDAC</Id>
+          <SubItems>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdWorkFlowReceta</Name>
+              <Hidden>false</Hidden>
+              <Caption>Flujo de recetas</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_CristalListViewFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Flujo de Recetas</Description>
+              <ImageReference>glass_16.png, Studio.Vision.Exe</ImageReference>
+              <Id>4A2C5EFE-2331-482D-B54B-1D36A1ED80B1</Id>
+              <SubItems />
+            </MenuItem>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdWorkFlowRecetaComun</Name>
+              <Hidden>false</Hidden>
+              <Caption>Recetas comunes</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_CristalMaterialListViewFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Flujo de recetas comunes</Description>
+              <Id>6fc48012-a769-4112-aaa2-77af77ee523d</Id>
+              <ImageReference>glass_16_i.png, Studio.Vision.Exe</ImageReference>
+              <SubItems />
+            </MenuItem>
+            <MenuItem>
+              <Type>Link</Type>
+              <Name>cmdWorkFlowRecetaContacto</Name>
+              <Hidden>false</Hidden>
+              <Caption>Recetas de contacto</Caption>
+              <Invoker>
+                <InvokerType>Studio.Net.Controls.New.DefaultModuleInvoker, Studio.Net.Controls.New</InvokerType>
+                <FactoryType>Studio.Vision.Controls.DV_CristalPlantillaListViewFactory, Studio.Vision.Controls</FactoryType>
+              </Invoker>
+              <Description>Flujo de Recetas de Contacto</Description>
+              <Id>60E5602D-2ECA-4F20-A94D-BE561E67E13B</Id>
+              <ImageReference>glass_16_i.png, Studio.Vision.Exe</ImageReference>
+              <SubItems />
+            </MenuItem>
+          </SubItems>
+        </MenuItem>
+      </Items>
+      <Id>C5808517-0232-4822-A14D-A49C1EB25A1F</Id>
+    </MenuGroup>
+    <MenuGroup>
+      <Items>     
+      </Items>
+      <Id>bbf6634b-0b89-4b67-8742-68dfac92e5c5</Id>
+    </MenuGroup>
+  </Groups>
+  <Differences>
+    <MenuItemDifference>
+      <Id>025791ca-c398-4c27-9df9-e0761ea61856</Id>
+      <!--Bonificacion Finamica-->
+      <PropertiesDiffs>
+        <PropertyDiffEntry>
+          <Key>FactoryType</Key>
+          <Value>Studio.Vision.Controls.BonificacionDinamicaFactory, Studio.Vision.Controls</Value>
+        </PropertyDiffEntry>
+      </PropertiesDiffs>
+    </MenuItemDifference>
+    <MenuItemDifference>
+      <ID>01bc40bf-9483-4f4d-b617-85c0202adae0</ID>
+      <PropertiesDiffs>
+        <PropertyDiffEntry>
+          <Key>Hidden</Key>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </PropertyDiffEntry>
+      </PropertiesDiffs>
+    </MenuItemDifference>
+    <MenuItemDifference>
+      <ID>cc2cf786-068f-4c3e-ba9a-681a6e57d534</ID>
+      <!--Ocultar Kits-->
+      <PropertiesDiffs>
+        <PropertyDiffEntry>
+          <Key>Hidden</Key>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </PropertyDiffEntry>
+      </PropertiesDiffs>
+    </MenuItemDifference>
+    <MenuItemDifference>
+      <ID>01bc40bf-9483-4f4d-b617-85c0202adae0</ID>
+      <!--Lista de vencimientos-->
+      <PropertiesDiffs>
+        <PropertyDiffEntry>
+          <Key>Hidden</Key>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </PropertyDiffEntry>
+      </PropertiesDiffs>
+    </MenuItemDifference>
+    <MenuItemDifference>
+      <ID>5dee8872-1355-40d1-9c52-e42b34a6a812</ID>
+      <!--Ocular consulta por serie-->
+      <PropertiesDiffs>
+        <PropertyDiffEntry>
+          <Key>Hidden</Key>
+          <Value xsi:type="xsd:boolean">false</Value>
+        </PropertyDiffEntry>
+      </PropertiesDiffs>
+    </MenuItemDifference>
+    <MenuItemDifference>
+      <ID>01bc40bf-9483-4f4d-b617-85c0202adae0</ID>
+      <PropertiesDiffs>
+        <PropertyDiffEntry>
+          <Key>Hidden</Key>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </PropertyDiffEntry>
+      </PropertiesDiffs>
+    </MenuItemDifference>
+    <MenuItemDifference>
+      <ID>01bc40bf-9483-4f4d-b617-85c0202adae0</ID>
+      <PropertiesDiffs>
+        <PropertyDiffEntry>
+          <Key>Hidden</Key>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </PropertyDiffEntry>
+      </PropertiesDiffs>
+    </MenuItemDifference>
+  </Differences>
+</MenuTreeDiff>

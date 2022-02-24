@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{18335A03-E602-43BE-87C7-C3D2C9ED5193}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Studio.Vision.Exe.Program</StartupObject>
+    <RootNamespace>Studio.Vision.Exe</RootNamespace>
+    <AssemblyName>Studio.Vision.Exe</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>VisionLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.2.Wizard, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.2.UI , Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v16.2.Extensions, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseUpdate.vb" />
+    <Compile Include="Dummy.vb" />
+    <Compile Include="Forms\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UtilsForm.Designer.vb">
+      <DependentUpon>UtilsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UtilsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VisionSplashScreenForm.Designer.vb">
+      <DependentUpon>VisionSplashScreenForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VisionSplashScreenForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UtilsForm.resx">
+      <DependentUpon>UtilsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VisionSplashScreenForm.resx">
+      <DependentUpon>VisionSplashScreenForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Articulo.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WindowDialog32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WindowDialog16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WindowDialog24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert_field_add_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_field_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vision.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vision1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Lens.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Search_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Save_New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Save_New_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refund_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reward_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reward_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_mail_write_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_mail_write_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_bi_cancel_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_bi_cancel_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_New_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GLASSES-icon_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GLASSES-icon_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainMenu\MainMenu_Diff.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BO_Report_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainMenu\Images\MisReportes24.png" />
+    <EmbeddedResource Include="MainMenu\Images\Optica24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MainMenu\Images\MisReportes16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainMenu\Images\Optica16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainMenu\Images\Config16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainMenu\Images\doctor_16.png" />
+    <EmbeddedResource Include="MainMenu\Images\glass_16.png" />
+    <EmbeddedResource Include="MainMenu\Images\glass_16_i.png" />
+    <EmbeddedResource Include="MainMenu\Images\safety_glasses_16.png" />
+    <EmbeddedResource Include="MainMenu\Images\optometrist_add_16.png" />
+    <Content Include="VisionLogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Drako.FE\Drako.FE.Common\Drako.FE.Common.vbproj">
+      <Project>{1d2a75ae-2457-47f5-9211-235607afdf8a}</Project>
+      <Name>Drako.FE.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Drako.FE\QRCode\QRCodeLib\QRCodeLib2.csproj">
+      <Project>{4e338e06-a304-4f5b-89c2-ed714cffb56e}</Project>
+      <Name>QRCodeLib2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\LinqSupportClasses\LinqSupportClasses.csproj">
+      <Project>{468b9d59-4b42-4dea-b039-3de8e0ec21e8}</Project>
+      <Name>LinqSupportClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\ORMSupportClasses\ORMSupportClasses.csproj">
+      <Project>{000e1525-6cfc-4690-99a7-6222801d5f5e}</Project>
+      <Name>ORMSupportClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\QuerySpec\QuerySpec.csproj">
+      <Project>{35d34bb5-8b27-43fe-9b29-4c4d7eedf78d}</Project>
+      <Name>QuerySpec</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\SqlServerDQE\SqlServerDQE.csproj">
+      <Project>{e13e1705-16ba-4a6f-9b0c-a1ed6e575169}</Project>
+      <Name>SqlServerDQE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\BLL\Studio.Net.BLL.vbproj">
+      <Project>{a1e22b01-3c2a-4d52-8d7c-37f1eca5d286}</Project>
+      <Name>Studio.Net.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\CHelper\Studio.Net.CHelper\Studio.Net.CHelper.csproj">
+      <Project>{1574ca60-95d9-48ec-a9df-e285a761ddd4}</Project>
+      <Name>Studio.Net.CHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Config\BLL\Studio.Config.BLL.vbproj">
+      <Project>{0ae7c8b6-b65a-4521-93cd-78babdf606cb}</Project>
+      <Name>Studio.Config.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Config\DAL\Studio.Config.DAL.vbproj">
+      <Project>{846bce8e-8d71-44c6-9446-f629e89ccd4a}</Project>
+      <Name>Studio.Config.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Config\DAL\Studio.Config.DALDBSpecific.vbproj">
+      <Project>{d130d1d2-cdf4-4bfd-bd05-800ddfeb12ff}</Project>
+      <Name>Studio.Config.DALDBSpecific</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Controls.New\Studio.Net.Controls.New.vbproj">
+      <Project>{1ab951a1-13bf-416e-9c48-7ed524f7298f}</Project>
+      <Name>Studio.Net.Controls.New</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Helper\Studio.Net.Helper.vbproj">
+      <Project>{87de56bd-fe48-46c4-851b-921019dccb59}</Project>
+      <Name>Studio.Net.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Plugins\Studio.Net.Plugins.vbproj">
+      <Project>{af2b15b9-103c-4a82-add2-c914a6122dfe}</Project>
+      <Name>Studio.Net.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Printing\Format\Studio.Net.Printing.Format.vbproj">
+      <Project>{435a7de9-4cd6-4eba-abcb-31020e28e295}</Project>
+      <Name>Studio.Net.Printing.Format</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Printing\Studio.Net.Printing.csproj">
+      <Project>{9d01412c-8369-4a6e-86d1-756b75bcf0e6}</Project>
+      <Name>Studio.Net.Printing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Reporting\Studio.Net.Reporting.vbproj">
+      <Project>{278f7259-c866-4fec-a4af-cfbdce58b303}</Project>
+      <Name>Studio.Net.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\BLL\Extensions\Validation\Studio.Phone.BLL.Validation\Studio.Phone.BLL.Validation.vbproj">
+      <Project>{1dcb8862-5ab3-4566-b448-0042e2452e9f}</Project>
+      <Name>Studio.Phone.BLL.Validation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\BLL\Studio.Phone.BLL.vbproj">
+      <Project>{38e4a782-cddd-4775-9dad-b93af55e7356}</Project>
+      <Name>Studio.Phone.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\Controls.New\Studio.Phone.Controls.New.vbproj">
+      <Project>{b8ab217f-c48e-49f6-ab2f-cba070f9985d}</Project>
+      <Name>Studio.Phone.Controls.New</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\DAL\Studio.Phone.DAL.vbproj">
+      <Project>{9782069c-a4a9-40f2-b66e-91edf3ed6355}</Project>
+      <Name>Studio.Phone.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\DAL\Studio.Phone.DALDBSpecific.vbproj">
+      <Project>{bdce61df-8425-4cf1-b309-f4709339c9a8}</Project>
+      <Name>Studio.Phone.DALDBSpecific</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\MyControls\Studio.Phone.MyControls.vbproj">
+      <Project>{6e940e1b-3ada-48c0-b55f-a3f5a3f2a683}</Project>
+      <Name>Studio.Phone.MyControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\Plugins\Studio.Phone.Plugins.vbproj">
+      <Project>{4ff8be8d-b71c-44c1-b50d-e8016d8485de}</Project>
+      <Name>Studio.Phone.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\Reports\Studio.Phone.Reporting.vbproj">
+      <Project>{984ae3c4-0bd5-419c-bd58-748aaeb3a727}</Project>
+      <Name>Studio.Phone.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\Traffic\Studio.Phone.Remoting.Services.vbproj">
+      <Project>{c3850255-66c2-4fdb-ab33-03b5c7cae6af}</Project>
+      <Name>Studio.Phone.Remoting.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\Studio.Vision.BLL.F.vbproj">
+      <Project>{5b4293f8-6c20-4d4a-9fc4-110a08606ee0}</Project>
+      <Name>Studio.Vision.BLL.F</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\Validation\Studio.Vision.BLL.Validation.F.vbproj">
+      <Project>{24240f96-fbac-4f2a-b70d-b008297e6be3}</Project>
+      <Name>Studio.Vision.BLL.Validation.F</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Control\Studio.Vision.Controls.F.vbproj">
+      <Project>{fe76268d-fffc-4113-8af2-3ca56836cc81}</Project>
+      <Name>Studio.Vision.Controls.F</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

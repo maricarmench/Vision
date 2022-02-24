@@ -1,0 +1,1 @@
+Copiar el archivo de licencia en la carpeta donde se instala. Ej.: C:\Program Files (x86)\Solutions Design\LLBLGen Pro v3.5

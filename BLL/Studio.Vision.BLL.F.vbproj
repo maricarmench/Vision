@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{5B4293F8-6C20-4D4A-9FC4-110A08606EE0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Studio.Vision.BLL</RootNamespace>
+    <AssemblyName>Studio.Vision.BLL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Studio.Vision.BLL.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Studio.Vision.BLL.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\DV_TallerBEntity.vb" />
+    <Compile Include="BLL\DV_Cristal_Local_Proveedor_PrecioGraduacionBEntity.vb" />
+    <Compile Include="BLL\DV_RecetaTipoBEntity.vb" />
+    <Compile Include="BLL\DV_Cristal_PrecioGraduacionBEntity.vb" />
+    <Compile Include="BLL\DV_CristalPlantillaBEntity.vb" />
+    <Compile Include="BLL\DV_CristalMaterial_ServicioBEntity.vb" />
+    <Compile Include="BLL\DV_Servicio.vb" />
+    <Compile Include="BLL\DV_Armazon.vb" />
+    <Compile Include="BLL\DV_RecetaContacto.vb" />
+    <Compile Include="BLL\DV_DocumentoSalida.vb" />
+    <Compile Include="BLL\DV_CristalMaterial.vb" />
+    <Compile Include="BLL\DV_Cristal.vb" />
+    <Compile Include="BLL\DV_Receta.vb" />
+    <Compile Include="BLL\DV_Doctor.vb" />
+    <Compile Include="BLL\DV_RecetaComun.vb" />
+    <Compile Include="BLL\Factory\DV_RecetaTipoBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_CristalPlantillaBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_ServicioBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_ArmazonBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_RecetaBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_CristalBEntityFactoryParaListView.vb" />
+    <Compile Include="BLL\Factory\DV_DoctorBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_CristalMaterialBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_CristalBEntityFactory.vb" />
+    <Compile Include="BLL\Inherited\DV_ListaPreVtaBEntity.vb" />
+    <Compile Include="BLL\Other\CristalesMatrixData.vb" />
+    <Compile Include="BLL\Other\ParametroCaja.vb" />
+    <Compile Include="Class1.vb" />
+    <Compile Include="Controller\DV_AAtributoPlantillaController.vb" />
+    <Compile Include="Extensions\AAtributoPlantillaControllerExtensions.vb" />
+    <Compile Include="Extensions\RubroControllerExtensions.vb" />
+    <Compile Include="DAL\StudioAdapter.vb" />
+    <Compile Include="Enums\Enums.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ParametroTree\Initializer.vb" />
+    <Compile Include="ParametroTree\VisionParametroTree.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\LinqSupportClasses\LinqSupportClasses.csproj">
+      <Project>{468b9d59-4b42-4dea-b039-3de8e0ec21e8}</Project>
+      <Name>LinqSupportClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\ORMSupportClasses\ORMSupportClasses.csproj">
+      <Project>{000e1525-6cfc-4690-99a7-6222801d5f5e}</Project>
+      <Name>ORMSupportClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\QuerySpec\QuerySpec.csproj">
+      <Project>{35d34bb5-8b27-43fe-9b29-4c4d7eedf78d}</Project>
+      <Name>QuerySpec</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\SqlServerDQE\SqlServerDQE.csproj">
+      <Project>{e13e1705-16ba-4a6f-9b0c-a1ed6e575169}</Project>
+      <Name>SqlServerDQE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\BLL\Studio.Net.BLL.vbproj">
+      <Project>{A1E22B01-3C2A-4D52-8D7C-37F1ECA5D286}</Project>
+      <Name>Studio.Net.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\CHelper\Studio.Net.CHelper\Studio.Net.CHelper.csproj">
+      <Project>{1574CA60-95D9-48EC-A9DF-E285A761DDD4}</Project>
+      <Name>Studio.Net.CHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Config\BLL\Studio.Config.BLL.vbproj">
+      <Project>{0AE7C8B6-B65A-4521-93CD-78BABDF606CB}</Project>
+      <Name>Studio.Config.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Helper\Studio.Net.Helper.vbproj">
+      <Project>{87DE56BD-FE48-46C4-851B-921019DCCB59}</Project>
+      <Name>Studio.Net.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\BLL\Studio.Phone.BLL.vbproj">
+      <Project>{38E4A782-CDDD-4775-9DAD-B93AF55E7356}</Project>
+      <Name>Studio.Phone.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\DAL\Studio.Phone.DAL.vbproj">
+      <Project>{9782069C-A4A9-40F2-B66E-91EDF3ED6355}</Project>
+      <Name>Studio.Phone.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\DAL\Studio.Phone.DALDBSpecific.vbproj">
+      <Project>{BDCE61DF-8425-4CF1-B309-F4709339C9A8}</Project>
+      <Name>Studio.Phone.DALDBSpecific</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model\Model.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

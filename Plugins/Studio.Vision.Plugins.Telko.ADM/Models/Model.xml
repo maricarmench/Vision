@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Model BLLNameSpace="Studio.Vision.Plugins.Telko.ADM" DALNameSpace="Studio.Phone.DAL" IDataDictionaryType="Studio.Phone.BLL.MyEntityCollection2, Studio.Phone.BLL">
+  <Entities>
+    <Entity Name="TenantEntity" FriendlyName="Tenant">
+      <Fields>
+        <Field Name="Id" FriendlyName="Id." Searchable="True" AllowFilter="True" Displayable="True" Locked="True" Sortable="True" IsDescriptor="False" EditMode="1" />
+        <Field Name="Nombre" FriendlyName="Descripción" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="IdProveedorDrako" FriendlyName="Id. Prov. Drako" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="RUT" FriendlyName="RUT" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="Activo" FriendlyName="Activo" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+      </Fields>
+    </Entity>
+    <Entity Name="SubTenantEntity" FriendlyName="Tenant">
+      <Fields>
+        <Field Name="Id" FriendlyName="Id." Searchable="True" AllowFilter="True" Displayable="True" Locked="True" Sortable="True" IsDescriptor="False" EditMode="1" />
+        <Field Name="TenantId" FriendlyName="Tenant" ForeignBEntityFactoryName="Business.TenantBEntityFactory" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="ClienteId" FriendlyName="Cliente" ForeignBEntityFactoryName="Studio.Phone.BLL.ClienteBEntityFactory, Studio.Phone.BLL" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="Descripcion" FriendlyName="Descripcion" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="LocalIdDestino" FriendlyName="LocalIdDestino" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="Activo" FriendlyName="Activo" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+      </Fields>
+    </Entity>
+    <Entity Name="ParametroDistribucionTentantEntity" FriendlyName="Parametro Tenants">
+      <Fields>
+        <Field Name="Id" FriendlyName="Id." Searchable="True" AllowFilter="True" Displayable="True" Locked="True" Sortable="True" IsDescriptor="False" EditMode="1" />
+        <Field Name="Orden" FriendlyName="Orden" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="Descripcion" FriendlyName="Descripción" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="CilindricoDesde" FriendlyName="Cil. desde" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="CilindricoHasta" FriendlyName="Cil. hasta" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="EsfericoDesde" FriendlyName="Esf. desde" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="EsfericoHasta" FriendlyName="Esf. hasta" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="AdicionDesde" FriendlyName="Adi. desde" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="AdicionHasta" FriendlyName="Adi. hasta" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="UsrCreador" FriendlyName="Creado por " Searchable="True" AllowFilter="True" Displayable="False" Locked="True" Sortable="True" IsDescriptor="False" EditMode="1" />
+        <Field Name="FechaCreado" FriendlyName="Fecha Creado" Searchable="True" AllowFilter="True" Displayable="False" Locked="True" Sortable="True" IsDescriptor="False" EditMode="1" />
+        <Field Name="UsrModificador" FriendlyName="Modificado por " Searchable="True" AllowFilter="True" Displayable="False" Locked="True" Sortable="True" IsDescriptor="False" EditMode="1" />
+        <Field Name="FechaModificado" FriendlyName="Fecha Modificado" Searchable="True" AllowFilter="True" Displayable="False" Locked="True" Sortable="True" IsDescriptor="False" EditMode="1" />
+      </Fields>
+    </Entity>
+    <Entity Name="ParametroDistribucionTentant_IdEntity" FriendlyName="Tenant">
+      <Fields>
+        <Field Name="Id" FriendlyName="Id." Searchable="True" AllowFilter="True" Displayable="True" Locked="True" Sortable="True" IsDescriptor="False" EditMode="1" />
+        <Field Name="ParametroDistribucionTenantId" FriendlyName="Parametro cabezal" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="Tipo" FriendlyName="Tipo"  EnumTypeName="Studio.Vision.Plugins.Telko.ADM.ParametroTentantIdTipoEnum, Studio.Vision.Plugins.Telko.ADM" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+      </Fields>
+    </Entity>
+
+    <Entity Name="DV_PlantillaReposicionEntity" FriendlyName="Plantilla">
+      <Fields>
+        <Field Name="Id" FriendlyName="Id." Searchable="True" AllowFilter="True" Displayable="True" Locked="True" Sortable="True" IsDescriptor="False" EditMode="1" />
+        <Field Name="Descripcion" FriendlyName="Descripción" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+      </Fields>
+    </Entity>
+    <Entity Name="DV_PlantillaReposicionDetalleEntity" FriendlyName="Plantilla">
+      <Fields>
+        <Field Name="PlantillaReposicionId" FriendlyName="Plantilla" ForeignBEntityFactoryName="Business.PlantillaBEntityFactory" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="Orden" FriendlyName="Orden" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="RubroId" FriendlyName="Rubro" ForeignBEntityFactoryName="Studio.Phone.BLL.RubroBEntityFactory, Studio.Phone.BLL" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="NivelId" FriendlyName="Nivel" ForeignBEntityFactoryName="Studio.Phone.BLL.NivelBEntityFactory, Studio.Phone.BLL" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="ArticuloId" FriendlyName="Articulo" ForeignBEntityFactoryName="Studio.Phone.BLL.ArticuloBEntityFactory, Studio.Phone.BLL" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="MarcaId" FriendlyName="Marca" ForeignBEntityFactoryName="Studio.Phone.BLL.MarcaBEntityFactory, Studio.Phone.BLL" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="ArticuloClaseId" FriendlyName="ArticuloClase" ForeignBEntityFactoryName="Studio.Phone.BLL.ArticuloClaseBEntityFactory, Studio.Phone.BLL" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="ArticuloCategoriaId" FriendlyName="ArticuloCategoria" ForeignBEntityFactoryName="Studio.Phone.BLL.ArticuloCategoriaBEntityFactory, Studio.Phone.BLL" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="CristalMaterialId" FriendlyName="CristalMaterial" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="CilindricoDesde" FriendlyName="Cil. desde" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="CilindricoHasta" FriendlyName="Cil. hasta" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="EsfericoDesde" FriendlyName="Esf. desde" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="EsfericoHasta" FriendlyName="Esf. hasta" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="AdicionDesde" FriendlyName="Adi. desde" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+        <Field Name="AdicionHasta" FriendlyName="Adi. hasta" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
+      </Fields>
+    </Entity>
+  </Entities>
+</Model>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4A26544-2D1B-41BE-9602-F55F30648093}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Studio.Vision.POS.Reporting</RootNamespace>
+    <AssemblyName>Studio.Vision.POS.Reporting</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Studio.Vision.POS.Reporting.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Studio.Vision.POS.Reporting.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Studio.Vision.POS.Reporting.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Studio.Vision.POS.Reporting.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OrdenTrabajoRecetaComun_Star.vb" />
+    <Compile Include="OrdenTrabajoRecetaComun_Ticket.vb" />
+    <Compile Include="OrdenTrabajoRecetaComun_Ticket_CutEpson.vb" />
+    <Compile Include="OrdenTrabajo_Star.vb" />
+    <Compile Include="OrdenTrabajo_TM880.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\ORMSupportClasses\ORMSupportClasses.csproj">
+      <Project>{000e1525-6cfc-4690-99a7-6222801d5f5e}</Project>
+      <Name>ORMSupportClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Net\BLL\Studio.Net.BLL.vbproj">
+      <Project>{a1e22b01-3c2a-4d52-8d7c-37f1eca5d286}</Project>
+      <Name>Studio.Net.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Net\Controls.New\Studio.Net.Controls.New.vbproj">
+      <Project>{1ab951a1-13bf-416e-9c48-7ed524f7298f}</Project>
+      <Name>Studio.Net.Controls.New</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Net\Helper\Studio.Net.Helper.vbproj">
+      <Project>{87de56bd-fe48-46c4-851b-921019dccb59}</Project>
+      <Name>Studio.Net.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Net\Printing\Format\Studio.Net.Printing.Format.vbproj">
+      <Project>{435a7de9-4cd6-4eba-abcb-31020e28e295}</Project>
+      <Name>Studio.Net.Printing.Format</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Net\Printing\Studio.Net.Printing.csproj">
+      <Project>{9d01412c-8369-4a6e-86d1-756b75bcf0e6}</Project>
+      <Name>Studio.Net.Printing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Phone.POS\BLL\POS\Studio.Phone.POS.BLL.vbproj">
+      <Project>{8370f1e5-0382-4ce2-8647-8d27983fb877}</Project>
+      <Name>Studio.Phone.POS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Phone.POS\DAL\Studio.Phone.POS.DAL.vbproj">
+      <Project>{5f2a4db1-d01f-4288-b15c-e276a85670c4}</Project>
+      <Name>Studio.Phone.POS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\Studio.Vision.POS.BLL.vbproj">
+      <Project>{3efb4038-9d3c-4d81-be81-05e2aaf18b0f}</Project>
+      <Name>Studio.Vision.POS.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

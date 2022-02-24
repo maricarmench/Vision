@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE76268D-FFFC-4113-8AF2-3CA56836CC81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>Studio.Vision.Controls</RootNamespace>
+    <AssemblyName>Studio.Vision.Controls</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Studio.Vision.Controls.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Studio.Vision.Controls.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Studio.Vision.Controls.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Studio.Vision.Controls.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\DV_RecetaComunDatosAdicionalesManager.vb" />
+    <Compile Include="DynamicDataSource\DataSourceOptionProvider.vb" />
+    <Compile Include="Factory\Control\DV_ParametroSistemaFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_RecetaComunDetailModuleViewFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_TallerDetailViewModuleFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_CajaDetailViewModuleFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_Cristal_PrecioGraduacionDetailModuleViewFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_CristalMaterial_ServicioDetailModuleViewFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_AjusteDetailViewModuleFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_TraspasoIngresoDetailViewModuleFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_DocumentoEntradaDetailViewModuleFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_CristalPlantillaDetailModuleViewFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_ArmazonDetailModuleViewFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_DoctorDetailModuleViewFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_CristalDetailModuleViewFactory.vb" />
+    <Compile Include="Factory\DetailViewModule\DV_CristalMaterialDetailModuleViewFactory.vb" />
+    <Compile Include="Factory\EmbeddedListViewModule\DV_Cristal_PrecioGraduacionmbeddedListViewFactory.vb" />
+    <Compile Include="Factory\ListViewModule\DV_TallerListViewModuleFactory.vb" />
+    <Compile Include="Factory\ListViewModule\DV_CajaListViewModuleFactory.vb" />
+    <Compile Include="Factory\ListViewModule\DV_DocumentoEntradaListViewModuleFactory.vb" />
+    <Compile Include="Factory\ListViewModule\DV_TraspasoIngresoListViewModuleFactory.vb" />
+    <Compile Include="Factory\ListViewModule\DV_AjusteListViewModuleFactory.vb" />
+    <Compile Include="Factory\EmbeddedListViewModule\DV_CristalMaterial_ServicioEmbeddedListViewFactory.vb" />
+    <Compile Include="Factory\TaskPanel\DV_RecetaComunTaskPanelModuleFactory.vb" />
+    <Compile Include="Factory\ListView\DV_CajaListViewFactory.vb" />
+    <Compile Include="Factory\ListView\DV_CristalPlantillaListViewFactory.vb" />
+    <Compile Include="Factory\ListView\DV_ArmazonListViewFactory.vb" />
+    <Compile Include="Factory\ListView\DV_DoctorListViewFactory.vb" />
+    <Compile Include="Factory\ListView\DV_CristalMaterialListViewFactory.vb" />
+    <Compile Include="Factory\ListView\DV_CristalListViewFactory.vb" />
+    <Compile Include="Factory\ListView\DV_ListaPreVtaListViewFactory.vb" />
+    <Compile Include="Factory\TaskPanel\DV_ConsultaVentasCristalModuleFactory.vb" />
+    <Compile Include="Factory\TaskPanel\DV_ConsultaInventarioCristalModuleFactory.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_TallerDetailView.Designer.vb">
+      <DependentUpon>DV_TallerDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_TallerDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_CajaDetailView.Designer.vb">
+      <DependentUpon>DV_CajaDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_CajaDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_Cristal_PrecioGraduacionDetailView.Designer.vb">
+      <DependentUpon>DV_Cristal_PrecioGraduacionDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_Cristal_PrecioGraduacionDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_CristalMaterial_ServicioDetailView.Designer.vb">
+      <DependentUpon>DV_CristalMaterial_ServicioDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_CristalMaterial_ServicioDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_DocumentoEntradaDetailView.Designer.vb">
+      <DependentUpon>DV_DocumentoEntradaDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_DocumentoEntradaDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_TraspasoIngresoDetailView.Designer.vb">
+      <DependentUpon>DV_TraspasoIngresoDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_TraspasoIngresoDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_AjusteDetailView.Designer.vb">
+      <DependentUpon>DV_AjusteDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_AjusteDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_ArmazonDetailView.Designer.vb">
+      <DependentUpon>DV_ArmazonDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_ArmazonDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_CristalMaterialDetailView.Designer.vb">
+      <DependentUpon>DV_CristalMaterialDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_CristalMaterialDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_CristalDetailView.Designer.vb">
+      <DependentUpon>DV_CristalDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_CristalDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_CristalPlantillaDetailView.Designer.vb">
+      <DependentUpon>DV_CristalPlantillaDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_CristalPlantillaDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_DoctorDetailView.Designer.vb">
+      <DependentUpon>DV_DoctorDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_DoctorDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_DummyVentaDetailView.Designer.vb">
+      <DependentUpon>DV_DummyVentaDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_DummyVentaDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\ListView\DV_CristalMaterial_ServicioEmbeedableListViewModule.Designer.vb">
+      <DependentUpon>DV_CristalMaterial_ServicioEmbeedableListViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\ListView\DV_CristalMaterial_ServicioEmbeedableListViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\ListView\DV_VentaListView.Designer.vb">
+      <DependentUpon>DV_VentaListView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\ListView\DV_VentaListView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\ListView\DV_RecetaComunWorkFlowListViewDynamic.Designer.vb">
+      <DependentUpon>DV_RecetaComunWorkFlowListViewDynamic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\ListView\DV_RecetaComunWorkFlowListViewDynamic.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\IRecetaWorkFlowStepContainer.vb" />
+    <Compile Include="UserControls\CRUD\DetailView\DV_RecetaComunDatosTallerDetailView.Designer.vb">
+      <DependentUpon>DV_RecetaComunDatosTallerDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_RecetaComunDatosTallerDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_RecetaLenteComunDetailView.Designer.vb">
+      <DependentUpon>DV_RecetaLenteComunDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_RecetaLenteComunDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_RecetaLenteContactoDetailView.Designer.vb">
+      <DependentUpon>DV_RecetaLenteContactoDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\DetailView\DV_RecetaLenteContactoDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_CajaXMLDetailView.Designer.vb">
+      <DependentUpon>DV_CajaXMLDetailView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_CajaXMLDetailView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_CambiarPreciosCompraCristalesVarianteView.Designer.vb">
+      <DependentUpon>DV_CambiarPreciosCompraCristalesVarianteView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_CambiarPreciosCompraCristalesVarianteView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_CambiarPreciosCristalesVarianteView.Designer.vb">
+      <DependentUpon>DV_CambiarPreciosCristalesVarianteView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_CambiarPreciosCristalesVarianteView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\CristalMatrixView.Designer.vb">
+      <DependentUpon>CristalMatrixView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\CristalMatrixView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_CrearVariantesCristalesView.Designer.vb">
+      <DependentUpon>DV_CrearVariantesCristalesView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_CrearVariantesCristalesView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_CrearVariantesDeCristales.Designer.vb">
+      <DependentUpon>DV_CrearVariantesDeCristales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_CrearVariantesDeCristales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_ParametroSistemaView.Designer.vb">
+      <DependentUpon>DV_ParametroSistemaView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_ParametroSistemaView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_RecetaImpresionConfiguracionView.Designer.vb">
+      <DependentUpon>DV_RecetaImpresionConfiguracionView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CRUD\Others\DV_RecetaImpresionConfiguracionView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Modules\DetailView\DV_RecetaComunDetailViewModule.Designer.vb">
+      <DependentUpon>DV_RecetaComunDetailViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Modules\DetailView\DV_RecetaComunDetailViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Modules\DetailView\DV_CristalDetailViewModule.Designer.vb">
+      <DependentUpon>DV_CristalDetailViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Modules\DetailView\DV_CristalDetailViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Modules\ListView\DV_CristalListViewModule.Designer.vb">
+      <DependentUpon>DV_CristalListViewModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Modules\ListView\DV_CristalListViewModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Modules\Others\DV_HistoricoDocumentoSalidaCristalModule.Designer.vb">
+      <DependentUpon>DV_HistoricoDocumentoSalidaCristalModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Modules\Others\DV_HistoricoDocumentoSalidaCristalModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Modules\Others\DV_ConsultaInventarioCristalModule.Designer.vb">
+      <DependentUpon>DV_ConsultaInventarioCristalModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Modules\Others\DV_ConsultaInventarioCristalModule.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Modules\ListView\Tabular\DV_HistoricoRecetaComunDynamicTabularListView.Designer.vb">
+      <DependentUpon>DV_HistoricoRecetaComunDynamicTabularListView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Modules\ListView\Tabular\DV_HistoricoRecetaComunDynamicTabularListView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Modules\TaskPanel\DV_HistoricoRecetaComunTaskPanel.Designer.vb">
+      <DependentUpon>DV_HistoricoRecetaComunTaskPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Modules\TaskPanel\DV_HistoricoRecetaComunTaskPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RecetaContainerForm.Designer.vb">
+      <DependentUpon>RecetaContainerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RecetaContainerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_TallerDetailView.resx">
+      <DependentUpon>DV_TallerDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_CajaDetailView.resx">
+      <DependentUpon>DV_CajaDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_Cristal_PrecioGraduacionDetailView.resx">
+      <DependentUpon>DV_Cristal_PrecioGraduacionDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_CristalMaterial_ServicioDetailView.resx">
+      <DependentUpon>DV_CristalMaterial_ServicioDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_TraspasoIngresoDetailView.resx">
+      <DependentUpon>DV_TraspasoIngresoDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_AjusteDetailView.resx">
+      <DependentUpon>DV_AjusteDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_ArmazonDetailView.resx">
+      <DependentUpon>DV_ArmazonDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_CristalMaterialDetailView.resx">
+      <DependentUpon>DV_CristalMaterialDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_CristalDetailView.resx">
+      <DependentUpon>DV_CristalDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_CristalPlantillaDetailView.resx">
+      <DependentUpon>DV_CristalPlantillaDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_DoctorDetailView.resx">
+      <DependentUpon>DV_DoctorDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_DummyVentaDetailView.resx">
+      <DependentUpon>DV_DummyVentaDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_RecetaComunDatosTallerDetailView.resx">
+      <DependentUpon>DV_RecetaComunDatosTallerDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_RecetaLenteComunDetailView.resx">
+      <DependentUpon>DV_RecetaLenteComunDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_RecetaLenteContactoDetailView.resx">
+      <DependentUpon>DV_RecetaLenteContactoDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\ListView\DV_CristalMaterial_ServicioEmbeedableListViewModule.resx">
+      <DependentUpon>DV_CristalMaterial_ServicioEmbeedableListViewModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\ListView\DV_RecetaComunWorkFlowListViewDynamic.resx">
+      <DependentUpon>DV_RecetaComunWorkFlowListViewDynamic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\Others\DV_CajaXMLDetailView.resx">
+      <DependentUpon>DV_CajaXMLDetailView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\Others\DV_CambiarPreciosCompraCristalesVarianteView.resx">
+      <DependentUpon>DV_CambiarPreciosCompraCristalesVarianteView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\Others\DV_CambiarPreciosCristalesVarianteView.resx">
+      <DependentUpon>DV_CambiarPreciosCristalesVarianteView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\Others\CristalMatrixView.resx">
+      <DependentUpon>CristalMatrixView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\Others\DV_CrearVariantesCristalesView.resx">
+      <DependentUpon>DV_CrearVariantesCristalesView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\Others\DV_CrearVariantesDeCristales.resx">
+      <DependentUpon>DV_CrearVariantesDeCristales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\Others\DV_ParametroSistemaView.resx">
+      <DependentUpon>DV_ParametroSistemaView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\Others\DV_RecetaImpresionConfiguracionView.resx">
+      <DependentUpon>DV_RecetaImpresionConfiguracionView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Modules\DetailView\DV_RecetaComunDetailViewModule.resx">
+      <DependentUpon>DV_RecetaComunDetailViewModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Modules\DetailView\DV_CristalDetailViewModule.resx">
+      <DependentUpon>DV_CristalDetailViewModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Modules\ListView\DV_CristalListViewModule.resx">
+      <DependentUpon>DV_CristalListViewModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Modules\Others\DV_HistoricoDocumentoSalidaCristalModule.resx">
+      <DependentUpon>DV_HistoricoDocumentoSalidaCristalModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Modules\Others\DV_ConsultaInventarioCristalModule.resx">
+      <DependentUpon>DV_ConsultaInventarioCristalModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Modules\ListView\Tabular\DV_HistoricoRecetaComunDynamicTabularListView.resx">
+      <DependentUpon>DV_HistoricoRecetaComunDynamicTabularListView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Modules\TaskPanel\DV_HistoricoRecetaComunTaskPanel.resx">
+      <DependentUpon>DV_HistoricoRecetaComunTaskPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RecetaContainerForm.resx">
+      <DependentUpon>RecetaContainerForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\LinqSupportClasses\LinqSupportClasses.csproj">
+      <Project>{468b9d59-4b42-4dea-b039-3de8e0ec21e8}</Project>
+      <Name>LinqSupportClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\ORMSupportClasses\ORMSupportClasses.csproj">
+      <Project>{000e1525-6cfc-4690-99a7-6222801d5f5e}</Project>
+      <Name>ORMSupportClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\BLL\Studio.Net.BLL.vbproj">
+      <Project>{A1E22B01-3C2A-4D52-8D7C-37F1ECA5D286}</Project>
+      <Name>Studio.Net.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Config\BLL\Studio.Config.BLL.vbproj">
+      <Project>{0AE7C8B6-B65A-4521-93CD-78BABDF606CB}</Project>
+      <Name>Studio.Config.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Config\DAL\Studio.Config.DAL.vbproj">
+      <Project>{846BCE8E-8D71-44C6-9446-F629E89CCD4A}</Project>
+      <Name>Studio.Config.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Controls.New\Studio.Net.Controls.New.vbproj">
+      <Project>{1AB951A1-13BF-416E-9C48-7ED524F7298F}</Project>
+      <Name>Studio.Net.Controls.New</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\Helper\Studio.Net.Helper.vbproj">
+      <Project>{87DE56BD-FE48-46C4-851B-921019DCCB59}</Project>
+      <Name>Studio.Net.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\BLL\Studio.Phone.BLL.vbproj">
+      <Project>{38E4A782-CDDD-4775-9DAD-B93AF55E7356}</Project>
+      <Name>Studio.Phone.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\Controls.New\Studio.Phone.Controls.New.vbproj">
+      <Project>{b8ab217f-c48e-49f6-ab2f-cba070f9985d}</Project>
+      <Name>Studio.Phone.Controls.New</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\DAL\Studio.Phone.DAL.vbproj">
+      <Project>{9782069C-A4A9-40F2-B66E-91EDF3ED6355}</Project>
+      <Name>Studio.Phone.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Phone\MyControls\Studio.Phone.MyControls.vbproj">
+      <Project>{6E940E1B-3ADA-48C0-B55F-A3F5A3F2A683}</Project>
+      <Name>Studio.Phone.MyControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\Studio.Vision.BLL.vbproj">
+      <Project>{5B4293F8-6C20-4D4A-9FC4-110A08606EE0}</Project>
+      <Name>Studio.Vision.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_New_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Save_New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Save_New_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Search_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_bi_cancel_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_bi_cancel_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Lens.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GLASSES-icon_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GLASSES-icon_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert_field_add_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_mail_write_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_mail_write_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refund_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_field_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reward_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reward_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vision.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vision1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WindowDialog16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WindowDialog24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WindowDialog32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Lens1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Lens2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+    <Folder Include="Factory\Invoker\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DXGrid.EnlargedSmallIcon.Ag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DXGrid.SmallIcon.Ag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Commands.Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stamp_add_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Copy_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Paste_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Query32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cambiar_precios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cambiar_precios_16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcelNew.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Open_Object.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Action_Open_Object_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BO_Customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BO_Customer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom_32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

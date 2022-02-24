@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{3EFB4038-9D3C-4D81-BE81-05E2AAF18B0F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Studio.Vision.POS.BLL</RootNamespace>
+    <AssemblyName>Studio.Vision.POS.BLL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\BLL\Enums\Enums.vb">
+      <Link>Enums.vb</Link>
+    </Compile>
+    <Compile Include="BLL\Descentants\BonificacionDinamicaController.vb" />
+    <Compile Include="BLL\DV_TallerBEntity.vb" />
+    <Compile Include="BLL\DV_Cristal_PrecioGraduacionBEntity.vb" />
+    <Compile Include="BLL\Descentants\DV_Servicio.vb" />
+    <Compile Include="BLL\DV_CristalMaterial_ServicioBEntity.vb" />
+    <Compile Include="BLL\DV_CristalPlantillaBEntity.vb" />
+    <Compile Include="BLL\DV_Armazon.vb" />
+    <Compile Include="BLL\Descentants\DV_Cliente.vb" />
+    <Compile Include="BLL\DV_CristalBEntity.vb" />
+    <Compile Include="BLL\DV_CristalMaterialBEntity.vb" />
+    <Compile Include="BLL\DV_Doctor.vb" />
+    <Compile Include="BLL\DV_DocumentoSalida.vb" />
+    <Compile Include="BLL\DV_Receta.vb" />
+    <Compile Include="BLL\DV_RecetaComunBEntity.vb" />
+    <Compile Include="BLL\DV_RecetaContactoBEntity.vb" />
+    <Compile Include="BLL\DV_RecetaTipoBEntity.vb" />
+    <Compile Include="BLL\Factory\DV_TallerBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_RecetaTipoBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_RecetaContactoBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_RecetaComunBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_ArmazonBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_CristalBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_CristalBEntityFactoryParaListView.vb" />
+    <Compile Include="BLL\Factory\DV_CristalMaterialBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_DoctorBEntityFactory.vb" />
+    <Compile Include="BLL\Factory\DV_RecetaBEntityFactory.vb" />
+    <Compile Include="BLL\Others\CristalesMatrixData.vb" />
+    <Compile Include="Class1.vb" />
+    <Compile Include="DAL\StudioAdapter.vb" />
+    <Compile Include="Extensions\EntityExtensions.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ParametroTree\VisionParametroTree.vb" />
+    <Compile Include="Triggers\DV_RecetaTrigger.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\LinqSupportClasses\LinqSupportClasses.csproj">
+      <Project>{468b9d59-4b42-4dea-b039-3de8e0ec21e8}</Project>
+      <Name>LinqSupportClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\ORMSupportClasses\ORMSupportClasses.csproj">
+      <Project>{000e1525-6cfc-4690-99a7-6222801d5f5e}</Project>
+      <Name>ORMSupportClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\LLBLGenPro\3.5\Frameworks\LLBLGen Pro\RuntimeLibraries\QuerySpec\QuerySpec.csproj">
+      <Project>{35d34bb5-8b27-43fe-9b29-4c4d7eedf78d}</Project>
+      <Name>QuerySpec</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Net\BLL\Studio.Net.BLL.vbproj">
+      <Project>{a1e22b01-3c2a-4d52-8d7c-37f1eca5d286}</Project>
+      <Name>Studio.Net.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Net\CHelper\Studio.Net.CHelper\Studio.Net.CHelper.csproj">
+      <Project>{1574CA60-95D9-48EC-A9DF-E285A761DDD4}</Project>
+      <Name>Studio.Net.CHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Net\Config\BLL\Studio.Config.BLL.vbproj">
+      <Project>{0ae7c8b6-b65a-4521-93cd-78babdf606cb}</Project>
+      <Name>Studio.Config.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Net\Config\DAL\Studio.Config.DAL.vbproj">
+      <Project>{846BCE8E-8D71-44C6-9446-F629E89CCD4A}</Project>
+      <Name>Studio.Config.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Net\Helper\Studio.Net.Helper.vbproj">
+      <Project>{87DE56BD-FE48-46C4-851B-921019DCCB59}</Project>
+      <Name>Studio.Net.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Phone.POS\BLL\POS\Studio.Phone.POS.BLL.vbproj">
+      <Project>{8370F1E5-0382-4CE2-8647-8D27983FB877}</Project>
+      <Name>Studio.Phone.POS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Phone.POS\DAL\Studio.Phone.POS.DAL.vbproj">
+      <Project>{5F2A4DB1-D01F-4288-B15C-E276A85670C4}</Project>
+      <Name>Studio.Phone.POS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Phone.POS\DAL\Studio.Phone.POS.DALDBSpecific.vbproj">
+      <Project>{3F067BF3-0123-416E-A9A6-751DC47C2CD4}</Project>
+      <Name>Studio.Phone.POS.DALDBSpecific</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model\Model.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
