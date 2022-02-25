@@ -115,9 +115,8 @@
     <Reference Include="Studio.Phone.Controls.New">
       <HintPath>..\References\Studio.Phone.Controls.New.dll</HintPath>
     </Reference>
-    <Reference Include="Studio.Phone.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Desktop\TELKO\Reposicion Automática\OneDrive-2022-01-31FUENTE ENERO 2022\Archivos\Studio.Phone.DAL.dll</HintPath>
+    <Reference Include="Studio.Phone.DAL">
+      <HintPath>..\References\Studio.Phone.DAL.dll</HintPath>
     </Reference>
     <Reference Include="Studio.Phone.MyControls">
       <HintPath>..\References\Studio.Phone.MyControls.dll</HintPath>

@@ -3,7 +3,7 @@
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{AC8B00C1-DCDD-448E-8354-416F22F11DCD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Studio.Vision.Plugins.Telko.ADM</RootNamespace>
@@ -13,7 +13,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -43,195 +43,224 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <DebugSymbols>true</DebugSymbols>
-    <DefineDebug>true</DefineDebug>
-    <DefineTrace>true</DefineTrace>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <OutputPath>..\..\Exe\bin\Debug\plugins\</OutputPath>
-    <DocumentationFile>Studio.Vision.Plugins.Telko.ADM.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\x86\Release\</OutputPath>
-    <DocumentationFile>Studio.Vision.Plugins.Telko.ADM.xml</DocumentationFile>
-    <Optimize>true</Optimize>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="C1.C1Zip">
+      <HintPath>..\..\References\C1.C1Zip.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DevExpress.BonusSkins.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.BonusSkins.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.BonusSkins.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Charts.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.Charts.v16.2.Core.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.Charts.v16.2.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.CodeParser.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.CodeParser.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.CodeParser.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Data.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.Data.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.Data.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.DataAccess.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.DataAccess.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.DataAccess.v16.2.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.DataAccess.v16.2.UI, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.DataAccess.v16.2.UI.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.DataAccess.v16.2.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Diagram.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.Diagram.v16.2.Core.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.Diagram.v16.2.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Office.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.Office.v16.2.Core.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.Office.v16.2.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Pdf.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.Pdf.v16.2.Core.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.Pdf.v16.2.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.PivotGrid.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.PivotGrid.v16.2.Core.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.PivotGrid.v16.2.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.Printing.v16.2.Core.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.Printing.v16.2.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.RichEdit.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.RichEdit.v16.2.Core.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.RichEdit.v16.2.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.Sparkline.v16.2.Core.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.Sparkline.v16.2.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\DevExpress.Utils.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Utils.v16.2.UI, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.Utils.v16.2.UI.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.Utils.v16.2.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Xpo.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.Xpo.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.Xpo.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Control\bin\Debug\DevExpress.XtraBars.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraBars.v16.2.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraCharts.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraCharts.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v16.2.Extensions, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraCharts.v16.2.Extensions.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraCharts.v16.2.Extensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v16.2.UI, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraCharts.v16.2.UI.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraCharts.v16.2.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v16.2.Wizard, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraCharts.v16.2.Wizard.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraCharts.v16.2.Wizard.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraDiagram.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraDiagram.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraDiagram.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraEditors.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraEditors.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraGauges.v16.2.Core, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraGauges.v16.2.Core.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraGauges.v16.2.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraGrid.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraGrid.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraLayout.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraLayout.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraNavBar.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraNavBar.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraNavBar.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraPivotGrid.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraPivotGrid.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraPivotGrid.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraPrinting.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraPrinting.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraReports.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraReports.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraReports.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraReports.v16.2.Extensions, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraReports.v16.2.Extensions.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraReports.v16.2.Extensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraRichEdit.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraRichEdit.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraRichEdit.v16.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v16.2.Extensions, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\DevExpress.XtraRichEdit.v16.2.Extensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraTreeList.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraTreeList.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraTreeList.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraVerticalGrid.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraVerticalGrid.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraVerticalGrid.v16.2.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraWizard.v16.2, Version=16.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\DevExpress.XtraWizard.v16.2.dll</HintPath>
+      <HintPath>..\..\References\DevExpress.XtraWizard.v16.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Drako.FE.Common">
+      <HintPath>..\..\References\Drako.FE.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.PointOfService, Version=1.11.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Microsoft.PointOfService.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PGK.Extensions">
+      <HintPath>..\..\References\PGK.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="QRCodeLib2">
+      <HintPath>..\..\References\QRCodeLib2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SD.LLBLGen.Pro.DQE.SqlServer.NET20, Version=3.5.0.0, Culture=neutral, PublicKeyToken=ca73b74ba4e3ff27, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\SD.LLBLGen.Pro.DQE.SqlServer.NET20.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="SD.LLBLGen.Pro.LinqSupportClasses.NET35, Version=3.5.0.0, Culture=neutral, PublicKeyToken=ca73b74ba4e3ff27, processorArchitecture=MSIL">
@@ -244,42 +273,114 @@
       <HintPath>..\..\References\SD.LLBLGen.Pro.ORMSupportClasses.NET20.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="SD.LLBLGen.Pro.QuerySpec, Version=3.5.0.0, Culture=neutral, PublicKeyToken=ca73b74ba4e3ff27, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\SD.LLBLGen.Pro.QuerySpec.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Config.BLL">
+      <HintPath>..\..\References\Studio.Config.BLL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Config.DAL">
+      <HintPath>..\..\References\Studio.Config.DAL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Config.DALDBSpecific">
+      <HintPath>..\..\References\Studio.Config.DALDBSpecific.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Studio.Net.BLL">
       <HintPath>..\..\References\Studio.Net.BLL.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Studio.Net.Controls.New, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Exe\bin\Debug\Studio.Net.Controls.New.dll</HintPath>
+    <Reference Include="Studio.Net.CHelper">
+      <HintPath>..\..\References\Studio.Net.CHelper.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Studio.Net.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Studio.Net.Controls.New">
+      <HintPath>..\..\References\Studio.Net.Controls.New.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Net.Helper">
       <HintPath>..\..\References\Studio.Net.Helper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Net.Payment">
+      <HintPath>..\..\References\Studio.Net.Payment.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Studio.Net.Plugins">
       <HintPath>..\..\References\Studio.Net.Plugins.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Studio.Net.Printing">
+      <HintPath>..\..\References\Studio.Net.Printing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Net.Printing.Format">
+      <HintPath>..\..\References\Studio.Net.Printing.Format.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Net.Reporting">
+      <HintPath>..\..\References\Studio.Net.Reporting.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Studio.Phone.BLL">
       <HintPath>..\..\References\Studio.Phone.BLL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Phone.BLL.Validation">
+      <HintPath>..\..\References\Studio.Phone.BLL.Validation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Studio.Phone.Controls.New">
       <HintPath>..\..\References\Studio.Phone.Controls.New.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Studio.Phone.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Desktop\TELKO\Reposicion Automática\OneDrive-2022-01-31FUENTE ENERO 2022\Archivos\Studio.Phone.DAL.dll</HintPath>
+    <Reference Include="Studio.Phone.DAL">
+      <HintPath>..\..\References\Studio.Phone.DAL.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Studio.Phone.DALDBSpecific, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Desktop\TELKO\Reposicion Automática\OneDrive-2022-01-31FUENTE ENERO 2022\Archivos\Studio.Phone.DALDBSpecific.dll</HintPath>
+    <Reference Include="Studio.Phone.DALDBSpecific">
+      <HintPath>..\..\References\Studio.Phone.DALDBSpecific.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Studio.Phone.Plugins, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="Studio.Phone.MyControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Studio.Phone.MyControls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Phone.Plugins">
       <HintPath>..\..\References\Studio.Phone.Plugins.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Phone.Remoting.Services">
+      <HintPath>..\..\References\Studio.Phone.Remoting.Services.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Phone.Reporting">
+      <HintPath>..\..\References\Studio.Phone.Reporting.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Phone.Traffic.DAL">
+      <HintPath>..\..\References\Studio.Phone.Traffic.DAL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Trade.FE.Common">
+      <HintPath>..\..\References\Studio.Trade.FE.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Trade.FE.Component">
+      <HintPath>..\..\References\Studio.Trade.FE.Component.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Vision.BLL">
+      <HintPath>..\..\References\Studio.Vision.BLL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Studio.Vision.BLL.Validation">
+      <HintPath>..\..\References\Studio.Vision.BLL.Validation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -345,10 +446,10 @@
     <Compile Include="UserControls\CRUD\DetailView\DV_Plantilla_RepDetalleDetailView.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\CRUD\DetailView\DV_TenantsDetailView.Designer.vb">
-      <DependentUpon>DV_TenantsDetailView.vb</DependentUpon>
+    <Compile Include="UserControls\CRUD\DetailView\DV_Tenants_SubTenantsDetailView.Designer.vb">
+      <DependentUpon>DV_Tenants_SubTenantsDetailView.vb</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\CRUD\DetailView\DV_TenantsDetailView.vb">
+    <Compile Include="UserControls\CRUD\DetailView\DV_Tenants_SubTenantsDetailView.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\CRUD\DetailView\DV_TenantsDetailViewPrueba.Designer.vb">
@@ -357,10 +458,10 @@
     <Compile Include="UserControls\CRUD\DetailView\DV_TenantsDetailViewPrueba.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\CRUD\DetailView\DV_Tenants_SubTenantsDetailView.Designer.vb">
-      <DependentUpon>DV_Tenants_SubTenantsDetailView.vb</DependentUpon>
+    <Compile Include="UserControls\CRUD\DetailView\DV_TenantsDetailView.Designer.vb">
+      <DependentUpon>DV_TenantsDetailView.vb</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\CRUD\DetailView\DV_Tenants_SubTenantsDetailView.vb">
+    <Compile Include="UserControls\CRUD\DetailView\DV_TenantsDetailView.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\CRUD\DetailView\ParametroComisionVendedorListView.designer.vb">
@@ -400,26 +501,24 @@
     <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_PlantillaRepDetailView.resx">
       <DependentUpon>DV_PlantillaRepDetailView.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_TenantsDetailView.resx">
-      <DependentUpon>DV_TenantsDetailView.vb</DependentUpon>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_Tenants_SubTenantsDetailView.resx">
+      <DependentUpon>DV_Tenants_SubTenantsDetailView.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_TenantsDetailViewPrueba.resx">
       <DependentUpon>DV_TenantsDetailViewPrueba.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_Tenants_SubTenantsDetailView.resx">
-      <DependentUpon>DV_Tenants_SubTenantsDetailView.vb</DependentUpon>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_TenantsDetailView.resx">
+      <DependentUpon>DV_TenantsDetailView.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CRUD\DetailView\ParametroComisionVendedorListView.resx">
       <DependentUpon>ParametroComisionVendedorListView.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CRUD\Others\DV_ParametrosAutoReposicionParametros.resx">
       <DependentUpon>DV_ParametrosAutoReposicionParametros.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Modules\ParametroComisionVendedorListViewModule.resx">
       <DependentUpon>ParametroComisionVendedorListViewModule.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\Modules\ParametrosAutoReposicionModule.resx">
-      <DependentUpon>ParametrosAutoReposicionModule.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -437,14 +536,24 @@
     <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MainMenu\PluginMenu.xml" />
-    <EmbeddedResource Include="Models\Model.xml" />
+    <EmbeddedResource Include="MainMenu\PluginMenu.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Action_Save.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Action_Save_32x32.png" />
+    <EmbeddedResource Include="Models\Model.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Control\Studio.Vision.Controls.vbproj">
+      <Project>{FE76268D-FFFC-4113-8AF2-3CA56836CC81}</Project>
+      <Name>Studio.Vision.Controls</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
