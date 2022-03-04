@@ -42,7 +42,9 @@ Public Class DV_Plantilla_RepDetalleDetailView
                 ' Iterate through the list.
                 For Each item As String In q
                     Debug.Write(item & " ")
-                    strOrden = item + 1
+                    strOrden = item
+                    OrdenCampo = CInt(strOrden) + 1
+                    strOrden = OrdenCampo
                 Next
             Else
                 strOrden = 1

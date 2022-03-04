@@ -15,9 +15,6 @@ Namespace Business
         Protected Overrides Function CreateEntityFactory() As SD.LLBLGen.Pro.ORMSupportClasses.IEntityFactory2
             'Return New Studio.Phone.DAL.FactoryClasses.DV_PlantillaReposicionEntityFactory
             Return New Studio.Phone.DAL.FactoryClasses.DV_PlantillaReposicionEntityFactory
-
-            'Return New Studio.Phone.DAL.FactoryClasses.TenantEntityFactory
-            'Return New Studio.Phone.DAL.FactoryClasses.PaisEntityFactory
         End Function
     End Class
 
