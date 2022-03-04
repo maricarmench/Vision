@@ -400,6 +400,9 @@
     <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_PlantillaRepDetailView.resx">
       <DependentUpon>DV_PlantillaRepDetailView.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_Plantilla_RepDetalleDetailView.resx">
+      <DependentUpon>DV_Plantilla_RepDetalleDetailView.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CRUD\DetailView\DV_TenantsDetailView.resx">
       <DependentUpon>DV_TenantsDetailView.vb</DependentUpon>
     </EmbeddedResource>

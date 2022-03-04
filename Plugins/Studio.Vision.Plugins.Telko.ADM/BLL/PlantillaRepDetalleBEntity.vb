@@ -15,6 +15,12 @@ Namespace Business
 
             Return New Studio.Phone.DAL.FactoryClasses.DV_PlantillaReposicionDetalleEntityFactory
         End Function
+
+        Friend ReadOnly Property GetDataAsDataTable As IQueryable
+            Get
+                Throw New NotImplementedException()
+            End Get
+        End Property
     End Class
 
 End Namespace

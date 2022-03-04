@@ -27,47 +27,40 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.cboPlantillaReposicionId = New DevExpress.XtraEditors.ComboBoxEdit()
         Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
-        ''Me.cboRubroId = New DevExpress.XtraEditors.ComboBoxEdit()'
+        Me.txtOrden = New DevExpress.XtraEditors.TextEdit()
+        Me.LayoutControlItem4 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.cboRubroId = New Studio.Net.Controls.[New].Controls.DxGridLookUp()
         Me.DxGridLookUp1View = New DevExpress.XtraGrid.Views.Grid.GridView()
-        'Me.cboNivelId = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.LayoutControlItem10 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.cboNivelId = New Studio.Net.Controls.[New].Controls.DxGridLookUp()
         Me.DxGridLookUp2View = New DevExpress.XtraGrid.Views.Grid.GridView()
-        'Me.cboArticuloId = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.LayoutControlItem11 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.cboArticuloId = New Studio.Net.Controls.[New].Controls.DxGridLookUp()
         Me.DxGridLookUp3View = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.LayoutControlItem11 = New DevExpress.XtraLayout.LayoutControlItem()
-        'Me.cboMarcaId = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.LayoutControlItem12 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.cboMarcaId = New Studio.Net.Controls.[New].Controls.DxGridLookUp()
         Me.DxGridLookUp4View = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.LayoutControlItem12 = New DevExpress.XtraLayout.LayoutControlItem()
-        'Me.cboArticuloClaseId = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.LayoutControlItem13 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.cboArticuloClaseId = New Studio.Net.Controls.[New].Controls.DxGridLookUp()
         Me.DxGridLookUp5View = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.LayoutControlItem13 = New DevExpress.XtraLayout.LayoutControlItem()
-        'Me.cboArticuloCategoriaId = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.LayoutControlItem14 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.cboArticuloCategoriaId = New Studio.Net.Controls.[New].Controls.DxGridLookUp()
         Me.DxGridLookUp6View = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.LayoutControlItem14 = New DevExpress.XtraLayout.LayoutControlItem()
-        'Me.cboCristalMaterialId = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.LayoutControlItem15 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.cboCristalMaterialId = New Studio.Net.Controls.[New].Controls.DxGridLookUp()
         Me.DxGridLookUp7View = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.LayoutControlItem15 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.txtCilindricoDesde = New DevExpress.XtraEditors.TextEdit()
         Me.LayoutControlItem16 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.txtCilindricoHasta = New DevExpress.XtraEditors.TextEdit()
+        Me.txtCilindricoDesde = New DevExpress.XtraEditors.TextEdit()
         Me.LayoutControlItem17 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.txtEsfericoDesde = New DevExpress.XtraEditors.TextEdit()
+        Me.txtCilindricoHasta = New DevExpress.XtraEditors.TextEdit()
         Me.LayoutControlItem18 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.txtEsfericoHasta = New DevExpress.XtraEditors.TextEdit()
+        Me.txtEsfericoDesde = New DevExpress.XtraEditors.TextEdit()
         Me.LayoutControlItem19 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.txtAdicionDesde = New DevExpress.XtraEditors.TextEdit()
+        Me.txtEsfericoHasta = New DevExpress.XtraEditors.TextEdit()
         Me.LayoutControlItem20 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.txtAdicionHasta = New DevExpress.XtraEditors.TextEdit()
+        Me.txtAdicionDesde = New DevExpress.XtraEditors.TextEdit()
         Me.LayoutControlItem21 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem4 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.txtOrden = New DevExpress.XtraEditors.TextEdit()
-        Me.LayoutControlItem10 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.txtAdicionHasta = New DevExpress.XtraEditors.TextEdit()
         Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem5 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.txtUsrCreador = New DevExpress.XtraEditors.TextEdit()
@@ -87,8 +80,11 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cboPlantillaReposicionId.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtOrden.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cboRubroId.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DxGridLookUp1View, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cboNivelId.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DxGridLookUp2View, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -118,9 +114,6 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         CType(Me.txtAdicionDesde.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtAdicionHasta.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtOrden.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtUsrCreador.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -187,17 +180,18 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         Me.LayoutControlGroup1.OptionsItemText.TextToControlDistance = 5
         Me.LayoutControlGroup1.Size = New System.Drawing.Size(724, 387)
         Me.LayoutControlGroup1.Text = "Datos Generales"
+        '
         'LayoutControlItem2
         '
         Me.LayoutControlItem2.Control = Me.cboPlantillaReposicionId
-        Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 24)
+        Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
         Me.LayoutControlItem2.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem2.TextSize = New System.Drawing.Size(102, 13)
         '
         'cboPlantillaReposicionId
         '
-        Me.cboPlantillaReposicionId.Location = New System.Drawing.Point(121, 60)
+        Me.cboPlantillaReposicionId.Location = New System.Drawing.Point(121, 36)
         Me.cboPlantillaReposicionId.Name = "cboPlantillaReposicionId"
         Me.cboPlantillaReposicionId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cboPlantillaReposicionId.Size = New System.Drawing.Size(613, 20)
@@ -207,14 +201,14 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         'LayoutControlItem3
         '
         Me.LayoutControlItem3.Control = Me.txtOrden
-        Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 48)
+        Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 24)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
         Me.LayoutControlItem3.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem3.TextSize = New System.Drawing.Size(102, 13)
         '
         'txtOrden
         '
-        Me.txtOrden.Location = New System.Drawing.Point(121, 84)
+        Me.txtOrden.Location = New System.Drawing.Point(121, 60)
         Me.txtOrden.Name = "txtOrden"
         Me.txtOrden.Size = New System.Drawing.Size(613, 20)
         Me.txtOrden.StyleController = Me.LayoutControl
@@ -223,23 +217,15 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         'LayoutControlItem4
         '
         Me.LayoutControlItem4.Control = Me.cboRubroId
-        Me.LayoutControlItem4.Location = New System.Drawing.Point(0, 72)
+        Me.LayoutControlItem4.Location = New System.Drawing.Point(0, 48)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
         Me.LayoutControlItem4.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem4.TextSize = New System.Drawing.Size(102, 13)
         '
-        'cboClienteId
+        'cboRubroId
         '
-        ''Me.cboRubroId.Location = New System.Drawing.Point(121, 108)
-        ''Me.cboRubroId.Name = "cboRubroId"
-        ''Me.cboRubroId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        ''Me.cboRubroId.Size = New System.Drawing.Size(613, 20)
-        ''Me.cboRubroId.StyleController = Me.LayoutControl
-        ''Me.cboRubroId.TabIndex = 31
-
-
         Me.cboRubroId.BusinessToUse = Nothing
-        Me.cboRubroId.Location = New System.Drawing.Point(121, 108)
+        Me.cboRubroId.Location = New System.Drawing.Point(121, 84)
         Me.cboRubroId.Name = "cboRubroId"
         Me.cboRubroId.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[True]
         Me.cboRubroId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
@@ -254,32 +240,24 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         Me.DxGridLookUp1View.Name = "DxGridLookUp1View"
         Me.DxGridLookUp1View.OptionsSelection.EnableAppearanceFocusedCell = False
         Me.DxGridLookUp1View.OptionsView.ShowGroupPanel = False
-
         '
         'LayoutControlItem10
         '
         Me.LayoutControlItem10.Control = Me.cboNivelId
-        Me.LayoutControlItem10.Location = New System.Drawing.Point(0, 120)
+        Me.LayoutControlItem10.Location = New System.Drawing.Point(0, 72)
         Me.LayoutControlItem10.Name = "LayoutControlItem10"
-        Me.LayoutControlItem10.Size = New System.Drawing.Size(724, 267)
+        Me.LayoutControlItem10.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem10.TextSize = New System.Drawing.Size(102, 13)
         '
         'cboNivelId
-
-        ''Me.cboNivelId.Location = New System.Drawing.Point(121, 156)
-        ''Me.cboNivelId.Name = "cboNivelId"
-        ''Me.cboNivelId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        ''Me.cboNivelId.Size = New System.Drawing.Size(613, 19)
-        ''Me.cboNivelId.StyleController = Me.LayoutControl
-        ''Me.cboNivelId.TabIndex = 33
-
+        '
         Me.cboNivelId.BusinessToUse = Nothing
-        Me.cboNivelId.Location = New System.Drawing.Point(121, 156)
+        Me.cboNivelId.Location = New System.Drawing.Point(121, 108)
         Me.cboNivelId.Name = "cboNivelId"
         Me.cboNivelId.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[True]
         Me.cboNivelId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cboNivelId.Properties.View = Me.DxGridLookUp2View
-        Me.cboNivelId.Size = New System.Drawing.Size(613, 19)
+        Me.cboNivelId.Size = New System.Drawing.Size(613, 20)
         Me.cboNivelId.StyleController = Me.LayoutControl
         Me.cboNivelId.TabIndex = 33
         '
@@ -293,27 +271,20 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         'LayoutControlItem11
         '
         Me.LayoutControlItem11.Control = Me.cboArticuloId
-        Me.LayoutControlItem11.Location = New System.Drawing.Point(0, 144)
+        Me.LayoutControlItem11.Location = New System.Drawing.Point(0, 96)
         Me.LayoutControlItem11.Name = "LayoutControlItem11"
-        Me.LayoutControlItem11.Size = New System.Drawing.Size(724, 267)
+        Me.LayoutControlItem11.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem11.TextSize = New System.Drawing.Size(102, 13)
         '
         'cboArticuloId
-
-        ''Me.cboArticuloId.Location = New System.Drawing.Point(121, 180)
-        ''Me.cboArticuloId.Name = "cboArticuloId"
-        ''Me.cboArticuloId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        ''Me.cboArticuloId.Size = New System.Drawing.Size(613, 19)
-        ''Me.cboArticuloId.StyleController = Me.LayoutControl
-        ''Me.cboArticuloId.TabIndex = 34
-
+        '
         Me.cboArticuloId.BusinessToUse = Nothing
-        Me.cboArticuloId.Location = New System.Drawing.Point(121, 180)
+        Me.cboArticuloId.Location = New System.Drawing.Point(121, 132)
         Me.cboArticuloId.Name = "cboArticuloId"
         Me.cboArticuloId.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[True]
         Me.cboArticuloId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cboArticuloId.Properties.View = Me.DxGridLookUp3View
-        Me.cboArticuloId.Size = New System.Drawing.Size(613, 19)
+        Me.cboArticuloId.Size = New System.Drawing.Size(613, 20)
         Me.cboArticuloId.StyleController = Me.LayoutControl
         Me.cboArticuloId.TabIndex = 34
         '
@@ -327,26 +298,20 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         'LayoutControlItem12
         '
         Me.LayoutControlItem12.Control = Me.cboMarcaId
-        Me.LayoutControlItem12.Location = New System.Drawing.Point(0, 168)
+        Me.LayoutControlItem12.Location = New System.Drawing.Point(0, 120)
         Me.LayoutControlItem12.Name = "LayoutControlItem12"
-        Me.LayoutControlItem12.Size = New System.Drawing.Size(724, 267)
+        Me.LayoutControlItem12.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem12.TextSize = New System.Drawing.Size(102, 13)
         '
         'cboMarcaId
-
-        ''Me.cboMarcaId.Location = New System.Drawing.Point(121, 204)
-        ''Me.cboMarcaId.Name = "cboMarcaId"
-        ''Me.cboMarcaId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        ''Me.cboMarcaId.Size = New System.Drawing.Size(613, 19)
-        ''Me.cboMarcaId.StyleController = Me.LayoutControl
-        ''Me.cboMarcaId.TabIndex = 35
+        '
         Me.cboMarcaId.BusinessToUse = Nothing
-        Me.cboMarcaId.Location = New System.Drawing.Point(121, 204)
+        Me.cboMarcaId.Location = New System.Drawing.Point(121, 156)
         Me.cboMarcaId.Name = "cboMarcaId"
         Me.cboMarcaId.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[True]
         Me.cboMarcaId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cboMarcaId.Properties.View = Me.DxGridLookUp4View
-        Me.cboMarcaId.Size = New System.Drawing.Size(613, 19)
+        Me.cboMarcaId.Size = New System.Drawing.Size(613, 20)
         Me.cboMarcaId.StyleController = Me.LayoutControl
         Me.cboMarcaId.TabIndex = 35
         '
@@ -360,26 +325,20 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         'LayoutControlItem13
         '
         Me.LayoutControlItem13.Control = Me.cboArticuloClaseId
-        Me.LayoutControlItem13.Location = New System.Drawing.Point(0, 192)
+        Me.LayoutControlItem13.Location = New System.Drawing.Point(0, 144)
         Me.LayoutControlItem13.Name = "LayoutControlItem13"
-        Me.LayoutControlItem13.Size = New System.Drawing.Size(724, 267)
+        Me.LayoutControlItem13.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem13.TextSize = New System.Drawing.Size(102, 13)
         '
         'cboArticuloClaseId
-
-        'Me.cboArticuloClaseId.Location = New System.Drawing.Point(121, 228)
-        'Me.cboArticuloClaseId.Name = "cboArticuloClaseId"
-        'Me.cboArticuloClaseId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        'Me.cboArticuloClaseId.Size = New System.Drawing.Size(613, 19)
-        'Me.cboArticuloClaseId.StyleController = Me.LayoutControl
-        'Me.cboArticuloClaseId.TabIndex = 36
+        '
         Me.cboArticuloClaseId.BusinessToUse = Nothing
-        Me.cboArticuloClaseId.Location = New System.Drawing.Point(121, 228)
+        Me.cboArticuloClaseId.Location = New System.Drawing.Point(121, 180)
         Me.cboArticuloClaseId.Name = "cboArticuloClaseId"
         Me.cboArticuloClaseId.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[True]
         Me.cboArticuloClaseId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cboArticuloClaseId.Properties.View = Me.DxGridLookUp5View
-        Me.cboArticuloClaseId.Size = New System.Drawing.Size(613, 19)
+        Me.cboArticuloClaseId.Size = New System.Drawing.Size(613, 20)
         Me.cboArticuloClaseId.StyleController = Me.LayoutControl
         Me.cboArticuloClaseId.TabIndex = 36
         '
@@ -393,26 +352,20 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         'LayoutControlItem14
         '
         Me.LayoutControlItem14.Control = Me.cboArticuloCategoriaId
-        Me.LayoutControlItem14.Location = New System.Drawing.Point(0, 216)
+        Me.LayoutControlItem14.Location = New System.Drawing.Point(0, 168)
         Me.LayoutControlItem14.Name = "LayoutControlItem14"
-        Me.LayoutControlItem14.Size = New System.Drawing.Size(724, 267)
+        Me.LayoutControlItem14.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem14.TextSize = New System.Drawing.Size(102, 13)
         '
         'cboArticuloCategoriaId
-
-        ''Me.cboArticuloCategoriaId.Location = New System.Drawing.Point(121, 252)
-        ''Me.cboArticuloCategoriaId.Name = "cboArticuloCategoriaId"
-        ''Me.cboArticuloCategoriaId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        ''Me.cboArticuloCategoriaId.Size = New System.Drawing.Size(613, 19)
-        ''Me.cboArticuloCategoriaId.StyleController = Me.LayoutControl
-        ''Me.cboArticuloCategoriaId.TabIndex = 37
+        '
         Me.cboArticuloCategoriaId.BusinessToUse = Nothing
-        Me.cboArticuloCategoriaId.Location = New System.Drawing.Point(121, 252)
+        Me.cboArticuloCategoriaId.Location = New System.Drawing.Point(121, 204)
         Me.cboArticuloCategoriaId.Name = "cboArticuloCategoriaId"
         Me.cboArticuloCategoriaId.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[True]
         Me.cboArticuloCategoriaId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cboArticuloCategoriaId.Properties.View = Me.DxGridLookUp6View
-        Me.cboArticuloCategoriaId.Size = New System.Drawing.Size(613, 19)
+        Me.cboArticuloCategoriaId.Size = New System.Drawing.Size(613, 20)
         Me.cboArticuloCategoriaId.StyleController = Me.LayoutControl
         Me.cboArticuloCategoriaId.TabIndex = 37
         '
@@ -426,27 +379,20 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         'LayoutControlItem15
         '
         Me.LayoutControlItem15.Control = Me.cboCristalMaterialId
-        Me.LayoutControlItem15.Location = New System.Drawing.Point(0, 240)
+        Me.LayoutControlItem15.Location = New System.Drawing.Point(0, 192)
         Me.LayoutControlItem15.Name = "LayoutControlItem15"
-        Me.LayoutControlItem15.Size = New System.Drawing.Size(724, 267)
+        Me.LayoutControlItem15.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem15.TextSize = New System.Drawing.Size(102, 13)
         '
         'cboCristalMaterialId
-
-        ''Me.cboCristalMaterialId.Location = New System.Drawing.Point(121, 276)
-        ''Me.cboCristalMaterialId.Name = "cboCristalMaterialId"
-        ''Me.cboCristalMaterialId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        ''Me.cboCristalMaterialId.Size = New System.Drawing.Size(613, 19)
-        ''Me.cboCristalMaterialId.StyleController = Me.LayoutControl
-        ''Me.cboCristalMaterialId.TabIndex = 38
-
+        '
         Me.cboCristalMaterialId.BusinessToUse = Nothing
-        Me.cboCristalMaterialId.Location = New System.Drawing.Point(121, 276)
+        Me.cboCristalMaterialId.Location = New System.Drawing.Point(121, 228)
         Me.cboCristalMaterialId.Name = "cboCristalMaterialId"
         Me.cboCristalMaterialId.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[True]
         Me.cboCristalMaterialId.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.cboCristalMaterialId.Properties.View = Me.DxGridLookUp7View
-        Me.cboCristalMaterialId.Size = New System.Drawing.Size(613, 19)
+        Me.cboCristalMaterialId.Size = New System.Drawing.Size(613, 20)
         Me.cboCristalMaterialId.StyleController = Me.LayoutControl
         Me.cboCristalMaterialId.TabIndex = 38
         '
@@ -460,96 +406,96 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         'LayoutControlItem16
         '
         Me.LayoutControlItem16.Control = Me.txtCilindricoDesde
-        Me.LayoutControlItem16.Location = New System.Drawing.Point(0, 264)
+        Me.LayoutControlItem16.Location = New System.Drawing.Point(0, 216)
         Me.LayoutControlItem16.Name = "LayoutControlItem16"
-        Me.LayoutControlItem16.Size = New System.Drawing.Size(724, 267)
+        Me.LayoutControlItem16.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem16.TextSize = New System.Drawing.Size(102, 13)
         '
         'txtCilindricoDesde
-
-        Me.txtCilindricoDesde.Location = New System.Drawing.Point(121, 300)
+        '
+        Me.txtCilindricoDesde.Location = New System.Drawing.Point(121, 252)
         Me.txtCilindricoDesde.Name = "txtCilindricoDesde"
-        Me.txtCilindricoDesde.Size = New System.Drawing.Size(613, 19)
+        Me.txtCilindricoDesde.Size = New System.Drawing.Size(613, 20)
         Me.txtCilindricoDesde.StyleController = Me.LayoutControl
         Me.txtCilindricoDesde.TabIndex = 39
         '
         'LayoutControlItem17
         '
         Me.LayoutControlItem17.Control = Me.txtCilindricoHasta
-        Me.LayoutControlItem17.Location = New System.Drawing.Point(0, 288)
+        Me.LayoutControlItem17.Location = New System.Drawing.Point(0, 240)
         Me.LayoutControlItem17.Name = "LayoutControlItem17"
-        Me.LayoutControlItem17.Size = New System.Drawing.Size(724, 267)
+        Me.LayoutControlItem17.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem17.TextSize = New System.Drawing.Size(102, 13)
         '
         'txtCilindricoHasta
-
-        Me.txtCilindricoHasta.Location = New System.Drawing.Point(121, 324)
+        '
+        Me.txtCilindricoHasta.Location = New System.Drawing.Point(121, 276)
         Me.txtCilindricoHasta.Name = "txtCilindricoHasta"
-        Me.txtCilindricoHasta.Size = New System.Drawing.Size(613, 19)
+        Me.txtCilindricoHasta.Size = New System.Drawing.Size(613, 20)
         Me.txtCilindricoHasta.StyleController = Me.LayoutControl
         Me.txtCilindricoHasta.TabIndex = 40
         '
         'LayoutControlItem18
         '
         Me.LayoutControlItem18.Control = Me.txtEsfericoDesde
-        Me.LayoutControlItem18.Location = New System.Drawing.Point(0, 312)
+        Me.LayoutControlItem18.Location = New System.Drawing.Point(0, 264)
         Me.LayoutControlItem18.Name = "LayoutControlItem18"
-        Me.LayoutControlItem18.Size = New System.Drawing.Size(724, 267)
+        Me.LayoutControlItem18.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem18.TextSize = New System.Drawing.Size(102, 13)
         '
         'txtEsfericoDesde
-
-        Me.txtEsfericoDesde.Location = New System.Drawing.Point(121, 348)
+        '
+        Me.txtEsfericoDesde.Location = New System.Drawing.Point(121, 300)
         Me.txtEsfericoDesde.Name = "txtEsfericoDesde"
-        Me.txtEsfericoDesde.Size = New System.Drawing.Size(613, 19)
+        Me.txtEsfericoDesde.Size = New System.Drawing.Size(613, 20)
         Me.txtEsfericoDesde.StyleController = Me.LayoutControl
         Me.txtEsfericoDesde.TabIndex = 41
         '
         'LayoutControlItem19
         '
         Me.LayoutControlItem19.Control = Me.txtEsfericoHasta
-        Me.LayoutControlItem19.Location = New System.Drawing.Point(0, 336)
+        Me.LayoutControlItem19.Location = New System.Drawing.Point(0, 288)
         Me.LayoutControlItem19.Name = "LayoutControlItem19"
-        Me.LayoutControlItem19.Size = New System.Drawing.Size(724, 267)
+        Me.LayoutControlItem19.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem19.TextSize = New System.Drawing.Size(102, 13)
         '
         'txtEsfericoHasta
-
-        Me.txtEsfericoHasta.Location = New System.Drawing.Point(121, 372)
+        '
+        Me.txtEsfericoHasta.Location = New System.Drawing.Point(121, 324)
         Me.txtEsfericoHasta.Name = "txtEsfericoHasta"
-        Me.txtEsfericoHasta.Size = New System.Drawing.Size(613, 19)
+        Me.txtEsfericoHasta.Size = New System.Drawing.Size(613, 20)
         Me.txtEsfericoHasta.StyleController = Me.LayoutControl
         Me.txtEsfericoHasta.TabIndex = 42
         '
         'LayoutControlItem20
         '
         Me.LayoutControlItem20.Control = Me.txtAdicionDesde
-        Me.LayoutControlItem20.Location = New System.Drawing.Point(0, 360)
+        Me.LayoutControlItem20.Location = New System.Drawing.Point(0, 312)
         Me.LayoutControlItem20.Name = "LayoutControlItem20"
-        Me.LayoutControlItem20.Size = New System.Drawing.Size(724, 267)
+        Me.LayoutControlItem20.Size = New System.Drawing.Size(724, 24)
         Me.LayoutControlItem20.TextSize = New System.Drawing.Size(102, 13)
         '
         'txtAdicionDesde
-
-        Me.txtAdicionDesde.Location = New System.Drawing.Point(121, 396)
+        '
+        Me.txtAdicionDesde.Location = New System.Drawing.Point(121, 348)
         Me.txtAdicionDesde.Name = "txtAdicionDesde"
-        Me.txtAdicionDesde.Size = New System.Drawing.Size(613, 19)
+        Me.txtAdicionDesde.Size = New System.Drawing.Size(613, 20)
         Me.txtAdicionDesde.StyleController = Me.LayoutControl
         Me.txtAdicionDesde.TabIndex = 43
         '
         'LayoutControlItem21
         '
         Me.LayoutControlItem21.Control = Me.txtAdicionHasta
-        Me.LayoutControlItem21.Location = New System.Drawing.Point(0, 384)
+        Me.LayoutControlItem21.Location = New System.Drawing.Point(0, 336)
         Me.LayoutControlItem21.Name = "LayoutControlItem21"
-        Me.LayoutControlItem21.Size = New System.Drawing.Size(724, 267)
+        Me.LayoutControlItem21.Size = New System.Drawing.Size(724, 51)
         Me.LayoutControlItem21.TextSize = New System.Drawing.Size(102, 13)
         '
         'txtAdicionHasta
-
-        Me.txtAdicionHasta.Location = New System.Drawing.Point(121, 420)
+        '
+        Me.txtAdicionHasta.Location = New System.Drawing.Point(121, 372)
         Me.txtAdicionHasta.Name = "txtAdicionHasta"
-        Me.txtAdicionHasta.Size = New System.Drawing.Size(613, 19)
+        Me.txtAdicionHasta.Size = New System.Drawing.Size(613, 20)
         Me.txtAdicionHasta.StyleController = Me.LayoutControl
         Me.txtAdicionHasta.TabIndex = 44
         '
@@ -646,23 +592,28 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cboPlantillaReposicionId.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtOrden.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cboRubroId.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DxGridLookUp1View, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtOrden.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cboNivelId.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DxGridLookUp2View, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cboArticuloId.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DxGridLookUp3View, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cboMarcaId.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DxGridLookUp4View, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cboArticuloClaseId.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DxGridLookUp5View, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cboArticuloCategoriaId.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DxGridLookUp6View, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem15, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cboCristalMaterialId.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DxGridLookUp7View, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCilindricoDesde.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem17, System.ComponentModel.ISupportInitialize).EndInit()
@@ -675,6 +626,7 @@ Partial Class DV_Plantilla_RepDetalleDetailView
         CType(Me.txtAdicionDesde.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtAdicionHasta.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtUsrCreador.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -700,14 +652,18 @@ Partial Class DV_Plantilla_RepDetalleDetailView
     Friend WithEvents cboPlantillaReposicionId As DevExpress.XtraEditors.ComboBoxEdit
     Friend WithEvents LayoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
     ''Friend WithEvents cboRubroId As DevExpress.XtraEditors.ComboBoxEdit
+
     Friend WithEvents cboRubroId As Studio.Net.Controls.New.Controls.DxGridLookUp
     Friend WithEvents DxGridLookUp1View As DevExpress.XtraGrid.Views.Grid.GridView
+
     ''Friend WithEvents cboNivelId As DevExpress.XtraEditors.ComboBoxEdit
     Friend WithEvents cboNivelId As Studio.Net.Controls.New.Controls.DxGridLookUp
     Friend WithEvents DxGridLookUp2View As DevExpress.XtraGrid.Views.Grid.GridView
+
     'Friend WithEvents cboArticuloId As DevExpress.XtraEditors.ComboBoxEdit
     Friend WithEvents cboArticuloId As Studio.Net.Controls.New.Controls.DxGridLookUp
     Friend WithEvents DxGridLookUp3View As DevExpress.XtraGrid.Views.Grid.GridView
+
     Friend WithEvents LayoutControlItem3 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents txtOrden As DevExpress.XtraEditors.TextEdit
     Friend WithEvents LayoutControlItem4 As DevExpress.XtraLayout.LayoutControlItem
@@ -716,18 +672,22 @@ Partial Class DV_Plantilla_RepDetalleDetailView
     'Friend WithEvents cboMarcaId As DevExpress.XtraEditors.ComboBoxEdit
     Friend WithEvents cboMarcaId As Studio.Net.Controls.New.Controls.DxGridLookUp
     Friend WithEvents DxGridLookUp4View As DevExpress.XtraGrid.Views.Grid.GridView
+
     Friend WithEvents LayoutControlItem12 As DevExpress.XtraLayout.LayoutControlItem
     'Friend WithEvents cboArticuloClaseId As DevExpress.XtraEditors.ComboBoxEdit
     Friend WithEvents cboArticuloClaseId As Studio.Net.Controls.New.Controls.DxGridLookUp
     Friend WithEvents DxGridLookUp5View As DevExpress.XtraGrid.Views.Grid.GridView
+
     Friend WithEvents LayoutControlItem13 As DevExpress.XtraLayout.LayoutControlItem
     'Friend WithEvents cboArticuloCategoriaId As DevExpress.XtraEditors.ComboBoxEdit
     Friend WithEvents cboArticuloCategoriaId As Studio.Net.Controls.New.Controls.DxGridLookUp
     Friend WithEvents DxGridLookUp6View As DevExpress.XtraGrid.Views.Grid.GridView
+
     Friend WithEvents LayoutControlItem14 As DevExpress.XtraLayout.LayoutControlItem
     'Friend WithEvents cboCristalMaterialId As DevExpress.XtraEditors.ComboBoxEdit
     Friend WithEvents cboCristalMaterialId As Studio.Net.Controls.New.Controls.DxGridLookUp
     Friend WithEvents DxGridLookUp7View As DevExpress.XtraGrid.Views.Grid.GridView
+
     Friend WithEvents LayoutControlItem15 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents txtCilindricoDesde As DevExpress.XtraEditors.TextEdit
     Friend WithEvents LayoutControlItem16 As DevExpress.XtraLayout.LayoutControlItem
