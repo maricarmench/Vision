@@ -271,11 +271,11 @@
     </Reference>
     <Reference Include="Studio.Phone.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Desktop\TELKO\Reposicion Automática\OneDrive-2022-01-31FUENTE ENERO 2022\Archivos\Studio.Phone.DAL.dll</HintPath>
+      <HintPath>..\..\References\Studio.Phone.DAL.dll</HintPath>
     </Reference>
     <Reference Include="Studio.Phone.DALDBSpecific, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Desktop\TELKO\Reposicion Automática\OneDrive-2022-01-31FUENTE ENERO 2022\Archivos\Studio.Phone.DALDBSpecific.dll</HintPath>
+      <HintPath>..\..\References\Studio.Phone.DALDBSpecific.dll</HintPath>
     </Reference>
     <Reference Include="Studio.Phone.Plugins, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
