@@ -12,7 +12,6 @@ Namespace Business
             MyBase.New()
         End Sub
         Protected Overrides Function CreateEntityFactory() As SD.LLBLGen.Pro.ORMSupportClasses.IEntityFactory2
-
             Return New Studio.Phone.DAL.FactoryClasses.DV_PlantillaReposicionDetalleEntityFactory
         End Function
     End Class

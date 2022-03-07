@@ -13,7 +13,7 @@
     <Entity Name="SubTenantEntity" FriendlyName="Tenant">
       <Fields>
         <Field Name="Id" FriendlyName="Id." Searchable="True" AllowFilter="True" Displayable="True" Locked="True" Sortable="True" IsDescriptor="False" EditMode="1" />
-        <Field Name="TenantId" FriendlyName="Tenant" ForeignBEntityFactoryName="Business.TenantBEntityFactory" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
+        <Field Name="TenantId" FriendlyName="Tenant" ForeignBEntityFactoryName="Studio.Vision.Plugins.Telko.ADM.Business.TenantBEntityFactory, Studio.Vision.Plugins.Telko.ADM.Business" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
         <Field Name="ClienteId" FriendlyName="Cliente" ForeignBEntityFactoryName="Studio.Phone.BLL.ClienteBEntityFactory, Studio.Phone.BLL" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
         <Field Name="Descripcion" FriendlyName="Descripcion" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
         <Field Name="LocalIdDestino" FriendlyName="LocalIdDestino" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
@@ -44,7 +44,6 @@
         <Field Name="Tipo" FriendlyName="Tipo"  EnumTypeName="Studio.Vision.Plugins.Telko.ADM.ParametroTentantIdTipoEnum, Studio.Vision.Plugins.Telko.ADM" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
       </Fields>
     </Entity>
-
     <Entity Name="DV_PlantillaReposicionEntity" FriendlyName="Plantilla">
       <Fields>
         <Field Name="Id" FriendlyName="Id." Searchable="True" AllowFilter="True" Displayable="True" Locked="True" Sortable="True" IsDescriptor="False" EditMode="1" />
