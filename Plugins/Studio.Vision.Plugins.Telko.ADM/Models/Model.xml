@@ -52,6 +52,7 @@
     </Entity>
     <Entity Name="DV_PlantillaReposicionDetalleEntity" FriendlyName="Plantilla">
       <Fields>
+        <Field Name="Id" FriendlyName="Id." Searchable="True" AllowFilter="True" Displayable="True" Locked="True" Sortable="True" IsDescriptor="False" EditMode="3" />
         <Field Name="PlantillaReposicionId" FriendlyName="Plantilla" ForeignBEntityFactoryName="Business.PlantillaBEntityFactory" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
         <Field Name="Orden" FriendlyName="Orden" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="True" EditMode="3" />
         <Field Name="RubroId" FriendlyName="Rubro" ForeignBEntityFactoryName="Studio.Phone.BLL.RubroBEntityFactory, Studio.Phone.BLL" Searchable="True" AllowFilter="True" Displayable="True" Locked="False" Sortable="True" IsDescriptor="False" EditMode="3" />
