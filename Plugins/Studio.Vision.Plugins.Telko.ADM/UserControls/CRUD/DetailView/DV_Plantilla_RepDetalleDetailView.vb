@@ -29,7 +29,7 @@ Public Class DV_Plantilla_RepDetalleDetailView
 
         MyBase.New(business, binding)
 
-        'InitializeComponent()
+        InitializeComponent()
         'Try
         '    IdPlanilla = GetCurrentEntity(Of DV_PlantillaReposicionDetalleEntity).PlantillaReposicionId
 
@@ -79,6 +79,6 @@ Public Class DV_Plantilla_RepDetalleDetailView
 
     Protected Overrides Sub BindControls()
         MyBase.BindControls()
-        'txtOrden.Enabled = False
+        txtOrden.Enabled = False
     End Sub
 End Class

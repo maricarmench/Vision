@@ -210,16 +210,25 @@ Public Class StudioDataAdapter
         MyBase.OnBeforeEntitySave(entitySaved, insertAction)
 
     End Sub
-    'Dim cant As Integer = 0
+    Dim cant As Integer = 0
     Protected Overrides Sub OnSaveEntity(ByVal saveQuery As SD.LLBLGen.Pro.ORMSupportClasses.IActionQuery, ByVal entityToSave As SD.LLBLGen.Pro.ORMSupportClasses.IEntity2)
         'If TypeOf entityToSave Is Del_DocumentoSalidaEntity Then
-        '    If entityToSave.IsNew Then
-        '        cant += 1
-        '    End If
-        '    If cant > 1 Then
-        '        Throw New Exception("Repetido")
-        '    End If
-        'End If
+        If TypeOf entityToSave Is DV_PlantillaReposicionEntity Then
+            If entityToSave.IsNew Then
+                cant += 1
+            End If
+            If cant > 1 Then
+                Throw New Exception("Repetido")
+            End If
+        End If
+        If TypeOf entityToSave Is DV_PlantillaReposicionDetalleEntity Then
+            If entityToSave.IsNew Then
+                cant += 1
+            End If
+            If cant > 1 Then
+                Throw New Exception("Repetido")
+            End If
+        End If
         MyBase.OnSaveEntity(saveQuery, entityToSave)
 
     End Sub

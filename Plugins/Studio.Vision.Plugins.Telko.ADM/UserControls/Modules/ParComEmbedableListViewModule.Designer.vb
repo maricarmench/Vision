@@ -22,8 +22,18 @@ Partial Class ParComEmbedableListViewModule
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.Orden = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+
+        'colOrden
+        '
+        Me.Orden.Caption = "Orden"
+        Me.Orden.FieldName = "Orden"
+        Me.Orden.Name = "colOrden"
+
         components = New System.ComponentModel.Container()
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
     End Sub
+
+    Friend WithEvents Orden As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
 
 End Class

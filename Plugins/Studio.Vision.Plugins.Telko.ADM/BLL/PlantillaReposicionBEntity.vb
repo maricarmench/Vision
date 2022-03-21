@@ -36,15 +36,16 @@ Namespace Business
 
     End Class
 
-
     Public Class MyPlantillaReposicionEntityFactory
         Inherits DV_PlantillaReposicionEntityFactory
         Public Overrides Function Create() As IEntity2
             Dim entity As DV_PlantillaReposicionEntity = MyBase.Create()
             'Asignamos un valor -1 para que el proceso automático de validación no salte ya que si el valor es cero no va a dejar guardar el registro.
             'Tener en cuenta que en el evento OnSaving de la BEntity vamos a cargarle un valor internamente.
-            entity.Id = -1
+            entity.Id = 0
             Return entity
         End Function
     End Class
+
+
 End Namespace
